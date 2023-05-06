@@ -20,7 +20,7 @@ public class EnemyMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints1[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
 
-            if (gameObject.transform.position == waypoints1[waypointIndex].transform.position)
+            if (gameObject.transform.position.x == waypoints1[waypointIndex].transform.position.x && gameObject.transform.position.y == waypoints1[waypointIndex].transform.position.y)
             {
                 if (waypointIndex != waypoints1.Length - 1)
                 {
@@ -39,7 +39,7 @@ public class EnemyMovement : MonoBehaviour
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints1[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
 
-            if (gameObject.transform.position == waypoints1[waypointIndex].transform.position)
+            if (gameObject.transform.position.x == waypoints1[waypointIndex].transform.position.x && gameObject.transform.position.y == waypoints1[waypointIndex].transform.position.y)
             {
                 if (waypointIndex != 0)
                 {
@@ -60,25 +60,21 @@ public class EnemyMovement : MonoBehaviour
     {
         if (waypoints1[index1].transform.position.y > waypoints1[index2].transform.position.y)
         {
-            Debug.Log("jalan1");
             transform.eulerAngles = new Vector3(0, 0, 180);
             return;
         }
         else if(waypoints1[index1].transform.position.y < waypoints1[index2].transform.position.y)
         {
-            Debug.Log("jalan2");
             transform.eulerAngles = new Vector3(0, 0, 0);
             return;
         }
         else if (waypoints1[index1].transform.position.x > waypoints1[index2].transform.position.x)
         {
-            Debug.Log("jalan3");
             transform.eulerAngles = new Vector3(0, 0, 90);
             return;
         }
         else if (waypoints1[index1].transform.position.x < waypoints1[index2].transform.position.x)
         {
-            Debug.Log("jalan4");
             transform.eulerAngles = new Vector3(0, 0, -90);
             return;
         }
