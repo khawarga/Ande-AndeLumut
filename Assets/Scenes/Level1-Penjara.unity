@@ -123,6 +123,107 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &2426875
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2426879}
+  - component: {fileID: 2426878}
+  - component: {fileID: 2426877}
+  - component: {fileID: 2426876}
+  m_Layer: 5
+  m_Name: Canvas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2426876
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_IgnoreReversedGraphics: 1
+  m_BlockingObjects: 0
+  m_BlockingMask:
+    serializedVersion: 2
+    m_Bits: 4294967295
+--- !u!114 &2426877
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426875}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_UiScaleMode: 0
+  m_ReferencePixelsPerUnit: 100
+  m_ScaleFactor: 1
+  m_ReferenceResolution: {x: 800, y: 600}
+  m_ScreenMatchMode: 0
+  m_MatchWidthOrHeight: 0
+  m_PhysicalUnit: 3
+  m_FallbackScreenDPI: 96
+  m_DefaultSpriteDPI: 96
+  m_DynamicPixelsPerUnit: 1
+  m_PresetInfoIsWorld: 0
+--- !u!223 &2426878
+Canvas:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426875}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+  m_PlaneDistance: 100
+  m_PixelPerfect: 0
+  m_ReceivesEvents: 1
+  m_OverrideSorting: 0
+  m_OverridePixelPerfect: 0
+  m_SortingBucketNormalizedSize: 0
+  m_AdditionalShaderChannelsFlag: 0
+  m_SortingLayerID: 0
+  m_SortingOrder: 0
+  m_TargetDisplay: 0
+--- !u!224 &2426879
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2426875}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 0, y: 0, z: 0}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 67895320}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0, y: 0}
+  m_AnchorMax: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 0, y: 0}
+  m_Pivot: {x: 0, y: 0}
 --- !u!1 &15910233
 GameObject:
   m_ObjectHideFlags: 0
@@ -434,6 +535,50 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &61325873 stripped
@@ -472,6 +617,95 @@ Transform:
   m_Father: {fileID: 830721766}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &67895316
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 67895320}
+  - component: {fileID: 67895319}
+  - component: {fileID: 67895318}
+  - component: {fileID: 67895317}
+  m_Layer: 5
+  m_Name: Image
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!225 &67895317
+CanvasGroup:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67895316}
+  m_Enabled: 1
+  m_Alpha: 0
+  m_Interactable: 1
+  m_BlocksRaycasts: 0
+  m_IgnoreParentGroups: 0
+--- !u!114 &67895318
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67895316}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_Material: {fileID: 0}
+  m_Color: {r: 0, g: 0, b: 0, a: 1}
+  m_RaycastTarget: 1
+  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
+  m_Maskable: 1
+  m_OnCullStateChanged:
+    m_PersistentCalls:
+      m_Calls: []
+  m_Sprite: {fileID: 0}
+  m_Type: 0
+  m_PreserveAspect: 0
+  m_FillCenter: 1
+  m_FillMethod: 4
+  m_FillAmount: 1
+  m_FillClockwise: 1
+  m_FillOrigin: 0
+  m_UseSpriteMesh: 0
+  m_PixelsPerUnitMultiplier: 1
+--- !u!222 &67895319
+CanvasRenderer:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67895316}
+  m_CullTransparentMesh: 1
+--- !u!224 &67895320
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 67895316}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2426879}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: -0.011452}
+  m_SizeDelta: {x: 1920, y: 1080}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &76848717
 GameObject:
   m_ObjectHideFlags: 0
@@ -977,6 +1211,50 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &164344960 stripped
@@ -1446,6 +1724,11 @@ Transform:
   m_Father: {fileID: 579591152}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &409585516 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: 8126551137413890314, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
+  m_PrefabInstance: {fileID: 886015921}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &426716302
 GameObject:
   m_ObjectHideFlags: 0
@@ -2571,6 +2854,37 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!1 &649437841
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 649437842}
+  m_Layer: 0
+  m_Name: StartingPoint
+  m_TagString: Untagged
+  m_Icon: {fileID: 1206586993520771344, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &649437842
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 649437841}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -45, y: -8, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1741208046}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &698452228
 GameObject:
   m_ObjectHideFlags: 0
@@ -2605,6 +2919,178 @@ Transform:
   m_Father: {fileID: 579591152}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &706974099
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 2721924666367750945, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_Pivot.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_Pivot.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_RootOrder
+      value: 6
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchorMax.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchorMax.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchorMin.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchorMin.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431444, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667175431464, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_Name
+      value: DialogCanvas
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 814.41
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0049744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: 132.79
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 804404620}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924668110283172, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+--- !u!1 &706974100 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2721924668110283172, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+  m_PrefabInstance: {fileID: 706974099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!225 &706974101 stripped
+CanvasGroup:
+  m_CorrespondingSourceObject: {fileID: 7917526739518970750, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+  m_PrefabInstance: {fileID: 706974099}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &706974102 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2721924666468424484, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+  m_PrefabInstance: {fileID: 706974099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fe87c0e1cc204ed48ad3b37840f39efc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &706974103 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2721924667260492013, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+  m_PrefabInstance: {fileID: 706974099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &706974104 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 2721924666187244785, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+  m_PrefabInstance: {fileID: 706974099}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &718878040
 GameObject:
   m_ObjectHideFlags: 0
@@ -3000,6 +3486,17 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!114 &804404620 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+  m_PrefabInstance: {fileID: 1404872671}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &809062724
 GameObject:
   m_ObjectHideFlags: 0
@@ -3505,11 +4002,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890314, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 49.9
+      value: 49.7
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890314, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -134.4
+      value: -133.1
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890314, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -3782,6 +4279,7 @@ GameObject:
   - component: {fileID: 929253192}
   - component: {fileID: 929253191}
   - component: {fileID: 929253190}
+  - component: {fileID: 929253193}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera
@@ -3848,13 +4346,26 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 929253189}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -28.1, y: -8, z: -10}
+  m_LocalPosition: {x: 50.100006, y: -129.40001, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &929253193
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 929253189}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 07ab98bfa10d9154185a451b8823dcaa, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  Obj: {fileID: 409585516}
 --- !u!1 &1011374926
 GameObject:
   m_ObjectHideFlags: 0
@@ -4717,6 +5228,50 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.18155923
       objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &1295222583 stripped
@@ -5305,6 +5860,50 @@ PrefabInstance:
     - target: {fileID: 3141477407516493677, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
@@ -6072,6 +6671,69 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &1741208044
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1741208046}
+  - component: {fileID: 1741208045}
+  - component: {fileID: 1741208047}
+  m_Layer: 0
+  m_Name: DialogManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1741208045
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741208044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 1121235fccb968f4e87c348a8d38d41b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  textNama: {fileID: 706974104}
+  textDialog: {fileID: 706974103}
+  charPotrait: {fileID: 706974102}
+--- !u!4 &1741208046
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741208044}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children:
+  - {fileID: 649437842}
+  m_Father: {fileID: 0}
+  m_RootOrder: 8
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1741208047
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741208044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7b92503aeba566843bed82dff39f51c0, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeInFadeOut: {fileID: 67895317}
+  startingPoint: {fileID: 649437842}
 --- !u!1 &1742924358
 GameObject:
   m_ObjectHideFlags: 0
@@ -6331,6 +6993,50 @@ PrefabInstance:
     - target: {fileID: 3141477407516493677, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
@@ -7249,6 +7955,50 @@ PrefabInstance:
     - target: {fileID: 3141477407516493677, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
       propertyPath: m_Layer
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: UI
+      value: 
+      objectReference: {fileID: 706974100}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogBox
+      value: 
+      objectReference: {fileID: 706974101}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: PP
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Penjahat
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Putri
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[0]
+      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+      objectReference: {fileID: 0}
+    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialog.kalimat.Array.data[1]
+      value: 
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}

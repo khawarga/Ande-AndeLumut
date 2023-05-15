@@ -4,7 +4,6 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-
     private float moveSpeed = 5f;
     private Rigidbody2D rb;
     private Vector2 moveDirection;
@@ -34,5 +33,10 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+    }
+
+    public void pindah(Transform startingPoint)
+    {
+        transform.position = new Vector3(startingPoint.position.x, startingPoint.position.y, startingPoint.position.z);
     }
 }

@@ -11,6 +11,13 @@ public class EnemyLineOfView : MonoBehaviour
             GetComponentInParent<EnemyMovement>().enabled = false;
             collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
             Debug.Log("jalan");
+            GetComponent<DialogTrigger>().dialogTrigger();
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        GetComponentInParent<EnemyMovement>().enabled = true;
+        collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
     }
 }

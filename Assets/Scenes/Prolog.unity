@@ -572,10 +572,6 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 8
       objectReference: {fileID: 0}
-    - target: {fileID: 2721924667665982912, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
-      propertyPath: m_Color.a
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
       propertyPath: m_SizeDelta.x
       value: 1920

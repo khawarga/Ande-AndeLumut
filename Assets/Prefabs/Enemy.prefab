@@ -116,6 +116,7 @@ GameObject:
   - component: {fileID: 3141477407516493679}
   - component: {fileID: 3141477407516493678}
   - component: {fileID: 6023980676063245262}
+  - component: {fileID: 6806285237748985147}
   m_Layer: 0
   m_Name: Line of View
   m_TagString: Untagged
@@ -228,3 +229,21 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ce3d9d5dcb14b2c4f96c3e9eb3f88e62, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &6806285237748985147
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3141477407516493677}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    nama: []
+    foto: []
+    kalimat: []
+  UI: {fileID: 0}
+  dialogBox: {fileID: 0}
