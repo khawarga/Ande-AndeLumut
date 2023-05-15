@@ -11,7 +11,7 @@ public class EnemyMovement : MonoBehaviour
     private int waypointIndex = 0;
     private int tanda = 0;
     private int waypointIndexTemp;
-    //private int muter = 0;
+    [SerializeField]private bool loop;
 
     // Update is called once per frame
     void Update()
@@ -29,9 +29,17 @@ public class EnemyMovement : MonoBehaviour
                 }
                 else
                 {
-                    tanda = 1;
-                    waypointIndex--;
-                    ubahArah(waypointIndex + 1, waypointIndex);
+                    if(loop == true)
+                    {
+                        waypointIndex = 0;
+                        ubahArah(waypoints1.Length-1, waypointIndex);
+                    }
+                    else
+                    {
+                        tanda = 1;
+                        waypointIndex--;
+                        ubahArah(waypointIndex + 1, waypointIndex);
+                    }
                 }
             }
         }
