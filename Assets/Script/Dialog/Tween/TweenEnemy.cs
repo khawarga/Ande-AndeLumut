@@ -10,22 +10,23 @@ public class TweenEnemy : MonoBehaviour
     [SerializeField]
     private Transform startingPoint;
 
+    [SerializeField]
     private DialogTrigger dialogTrigger;
-
-    private void Awake()
-    {
-        dialogTrigger = FindObjectOfType<DialogTrigger>();
-        dialogTrigger.OnDialogFinish += ketangkap;
-    }
 
     private void ketangkap(object sender, System.EventArgs e)
     {
         LeanTween.alphaCanvas(FadeInFadeOut, 1f, 2f).setOnComplete(pindah);
     }
 
+    public void addListener()
+    {
+        dialogTrigger.OnDialogFinish += ketangkap;
+    }
+
     private void pindah()
     {
         GameObject.Find("Player").GetComponent<PlayerMovement>().pindah(startingPoint);
         LeanTween.alphaCanvas(FadeInFadeOut, 0f, 2f);
+        dialogTrigger.OnDialogFinish -= ketangkap;
     }
 }

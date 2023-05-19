@@ -4,14 +4,20 @@ using UnityEngine;
 
 public class EnemyLineOfView : MonoBehaviour
 {
+    [SerializeField]
+    private DialogTrigger dialogTrigger;
+
+    [SerializeField]
+    private TweenEnemy tweenEnemy;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
             GetComponentInParent<EnemyMovement>().enabled = false;
             collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
-            Debug.Log("jalan");
-            GetComponent<DialogTrigger>().dialogTrigger();
+            dialogTrigger.dialogTrigger();
+            tweenEnemy.addListener();
         }
     }
 

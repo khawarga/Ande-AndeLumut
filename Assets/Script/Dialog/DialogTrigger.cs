@@ -17,7 +17,7 @@ public class DialogTrigger : MonoBehaviour
 
     private void Start()
     {
-        dialogBox = UI.GetComponentInChildren<CanvasGroup>();
+        //dialogBox = UI.GetComponentInChildren<CanvasGroup>();
     }
 
     public void dialogTrigger()

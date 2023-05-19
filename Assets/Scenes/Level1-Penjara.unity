@@ -535,51 +535,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 102674547}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &61325873 stripped
 Transform:
@@ -630,12 +595,12 @@ GameObject:
   - component: {fileID: 67895318}
   - component: {fileID: 67895317}
   m_Layer: 5
-  m_Name: Image
+  m_Name: Blur
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!225 &67895317
 CanvasGroup:
   m_ObjectHideFlags: 0
@@ -644,7 +609,7 @@ CanvasGroup:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 67895316}
   m_Enabled: 1
-  m_Alpha: 0
+  m_Alpha: 1
   m_Interactable: 1
   m_BlocksRaycasts: 0
   m_IgnoreParentGroups: 0
@@ -853,6 +818,59 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
+--- !u!1 &102674545
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 102674546}
+  - component: {fileID: 102674547}
+  m_Layer: 0
+  m_Name: DialogTriggerEnemy
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &102674546
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102674545}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1741208046}
+  m_RootOrder: 1
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &102674547
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 102674545}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    nama:
+    - Penjahat
+    foto:
+    - PP
+    kalimat:
+    - Lihat, putri melarikan diri! Jangan biarkan putri kabur!
+  UI: {fileID: 706974100}
+  dialogBox: {fileID: 706974101}
 --- !u!1 &132644226
 GameObject:
   m_ObjectHideFlags: 0
@@ -879,7 +897,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 132644226}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -10.3, y: -4.29, z: 0}
+  m_LocalPosition: {x: -0.06, y: -0.28, z: 0}
   m_LocalScale: {x: 0.5, y: 0.5, z: 0.5}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1322,51 +1340,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 102674547}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &164344960 stripped
 Transform:
@@ -3299,7 +3282,7 @@ PrefabInstance:
     - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 804404620}
+      objectReference: {fileID: 0}
     - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
       value: dialogTrigger
@@ -3748,17 +3731,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 1, y: 1}
   m_EdgeRadius: 0
---- !u!114 &804404620 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-  m_PrefabInstance: {fileID: 1404872671}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 0}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &809062724
 GameObject:
   m_ObjectHideFlags: 0
@@ -5621,51 +5593,16 @@ PrefabInstance:
       propertyPath: m_Color.r
       value: 0.18155923
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 102674547}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &1295222583 stripped
 Transform:
@@ -6254,50 +6191,14 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 102674547}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &1404872672 stripped
@@ -7218,6 +7119,7 @@ GameObject:
   - component: {fileID: 1741208046}
   - component: {fileID: 1741208045}
   - component: {fileID: 1741208047}
+  - component: {fileID: 1741208049}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -7253,6 +7155,8 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 649437842}
+  - {fileID: 102674546}
+  - {fileID: 2039795520}
   m_Father: {fileID: 0}
   m_RootOrder: 7
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -7270,6 +7174,21 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeInFadeOut: {fileID: 67895317}
   startingPoint: {fileID: 649437842}
+  dialogTrigger: {fileID: 102674547}
+--- !u!114 &1741208049
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1741208044}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 637ced0f27e7be34e85fe4cf5ae931c4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeInFadeOut: {fileID: 67895317}
+  dialogTrigger: {fileID: 2039795519}
 --- !u!1 &1742924358
 GameObject:
   m_ObjectHideFlags: 0
@@ -7530,51 +7449,16 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 102674547}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &1776667157 stripped
 Transform:
@@ -8492,57 +8376,85 @@ PrefabInstance:
       propertyPath: m_Layer
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: UI
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: tweenEnemy
       value: 
-      objectReference: {fileID: 706974100}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialogBox
+      objectReference: {fileID: 1741208047}
+    - target: {fileID: 6023980676063245262, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
+      propertyPath: dialogTrigger
       value: 
-      objectReference: {fileID: 706974101}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[0]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.foto.Array.data[1]
-      value: PP
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.size
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[0]
-      value: Penjahat
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.nama.Array.data[1]
-      value: Putri
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[0]
-      value: Lihat, putri melarikan diri! Jangan biarkan putri kabur!
-      objectReference: {fileID: 0}
-    - target: {fileID: 6806285237748985147, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
-      propertyPath: dialog.kalimat.Array.data[1]
-      value: 
-      objectReference: {fileID: 0}
-    m_RemovedComponents: []
+      objectReference: {fileID: 102674547}
+    m_RemovedComponents:
+    - {fileID: 0}
   m_SourcePrefab: {fileID: 100100000, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
 --- !u!4 &1988519273 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 3141477406697363333, guid: 66686003fa105584da14e592a5adf9dc, type: 3}
   m_PrefabInstance: {fileID: 1988519272}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &2039795518
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2039795520}
+  - component: {fileID: 2039795519}
+  m_Layer: 0
+  m_Name: DialogTriggerMulai
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2039795519
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039795518}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    nama:
+    - Putri
+    - Ibu
+    - Putri
+    - Ibu
+    foto:
+    - PP
+    - PP
+    - PP
+    - PP
+    kalimat:
+    - Bu bangun bu...
+    - Hmmm....kita dimana nak?
+    - Sepertinya kita diculik oleh ibu tiri. Ibu tunggu disini ya, saya akan mencari
+      tali supaya kita bisa kabur lewat jendela itu.
+    - Hati - hati ya nak
+  UI: {fileID: 706974100}
+  dialogBox: {fileID: 706974101}
+--- !u!4 &2039795520
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2039795518}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1741208046}
+  m_RootOrder: 2
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2068743301
 GameObject:
   m_ObjectHideFlags: 0
