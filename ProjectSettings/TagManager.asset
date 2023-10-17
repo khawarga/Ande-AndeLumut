@@ -9,6 +9,7 @@ TagManager:
   - Rope
   - PenPaper
   - Pintu
+  - Enemy
   layers:
   - Default
   - TransparentFX

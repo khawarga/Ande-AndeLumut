@@ -20,12 +20,16 @@ public class Pintu : MonoBehaviour
     {
         PlayerObject inventory = collision.GetComponent<PlayerObject>();
 
-        if(ID.Equals("Green"))
+        switch (ID)
         {
-            if (inventory.getGreenKey().Equals(true))
-            {
+            case "Green":
+                inventory.getGreenKey().Equals(true);
                 canUnclock = true;
-            }
+                break;
+            case "Yellow":
+                inventory.getYellowKey().Equals(true);
+                canUnclock = true;
+                break;
         }
     }
 }

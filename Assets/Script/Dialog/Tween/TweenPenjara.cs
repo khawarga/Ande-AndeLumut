@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class TweenPenjara : MonoBehaviour
@@ -14,9 +15,20 @@ public class TweenPenjara : MonoBehaviour
         LeanTween.alphaCanvas(FadeInFadeOut, 0f, 2.2f).setOnComplete(dialog);
     }
 
-    private void dialog()
+    private async void dialog()
     {
         dialogTrigger.dialogTrigger();
-        Debug.Log("jalan");
+
+        await Task.Delay(7000);
+
+        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+        GameObject.Find("Player").GetComponent<PlayerObject>().enabled = true;
     }
+
+    /*private void aktif(object sender, System.EventArgs e)
+    {
+        GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+        GameObject.Find("Player").GetComponent<PlayerObject>().enabled = true;
+        //dialogTrigger.OnDialogFinish -= aktif;
+    }*/
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using UnityEngine;
 
 public class EnemyLineOfView : MonoBehaviour
@@ -10,12 +11,25 @@ public class EnemyLineOfView : MonoBehaviour
     [SerializeField]
     private TweenEnemy tweenEnemy;
 
-    private void OnTriggerEnter2D(Collider2D collision)
+    private GameObject[] enemylist;
+
+    private void Start()
+    {
+        enemylist = GameObject.FindGameObjectsWithTag("Enemy");
+    }
+
+    private async void OnTriggerEnter2D(Collider2D collision)
     {
         if (collision.gameObject.tag.Equals("Player"))
         {
-            GetComponentInParent<EnemyMovement>().enabled = false;
+            await Task.Delay(500);
+            foreach(GameObject x in enemylist)
+            {
+                x.GetComponent<EnemyMovement>().enabled = false;
+            }
+            //GetComponentInParent<EnemyMovement>().enabled = false;
             collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
+            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
             dialogTrigger.dialogTrigger();
             tweenEnemy.addListener();
         }
@@ -25,5 +39,6 @@ public class EnemyLineOfView : MonoBehaviour
     {
         GetComponentInParent<EnemyMovement>().enabled = true;
         collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
+        collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
     }
 }
