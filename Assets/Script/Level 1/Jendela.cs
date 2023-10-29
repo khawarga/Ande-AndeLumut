@@ -2,10 +2,13 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class Jendela : MonoBehaviour
 {
     private bool open;
+
+    public CanvasGroup FadeInFadeOut;
 
     [SerializeField]
     private DialogTrigger benar;
@@ -50,16 +53,39 @@ public class Jendela : MonoBehaviour
             {
                 if (open)
                 {
+                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerJendelaBener").gameObject.SetActive(true);
                     player.GetComponent<PlayerMovement>().enabled = false;
+                    benar.OnDialogFinish += jendela;
                     benar.dialogTrigger();
                 }
                 else
                 {
+                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerJendelaSalah").gameObject.SetActive(true);
                     player.GetComponent<PlayerMovement>().enabled = false;
+                    salah.OnDialogFinish += jendela;
                     salah.dialogTrigger();
-                    player.GetComponent<PlayerMovement>().enabled = true;
                 }
             }
         }
+    }
+
+    private void jendela(object sender, System.EventArgs e)
+    {
+        if (open)
+        {
+            Debug.Log("benar");
+            LeanTween.alphaCanvas(FadeInFadeOut, 1f, 2.2f).setOnComplete(changeScene);
+        }
+        else if (!open)
+        {
+            Debug.Log("salah");
+            player.GetComponent<PlayerMovement>().enabled = true;
+        }
+        benar.OnDialogFinish -= jendela;
+    }
+
+    private void changeScene()
+    {
+        SceneManager.LoadScene("VisualNovel2-DiluarPenjara");
     }
 }

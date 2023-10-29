@@ -22,8 +22,7 @@ public class TweenProlog : MonoBehaviour
 
     private void dialog()
     {
-        FindObjectOfType<DialogTrigger>().dialogTrigger();
-        Debug.Log("jalan");
+        dialogTrigger.dialogTrigger();
     }
 
     private void changeScene(object sender, System.EventArgs e)

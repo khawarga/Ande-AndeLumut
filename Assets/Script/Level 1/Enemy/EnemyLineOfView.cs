@@ -20,6 +20,7 @@ public class EnemyLineOfView : MonoBehaviour
 
     private async void OnTriggerEnter2D(Collider2D collision)
     {
+        GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerEnemy").gameObject.SetActive(true);
         if (collision.gameObject.tag.Equals("Player"))
         {
             await Task.Delay(500);
@@ -37,7 +38,10 @@ public class EnemyLineOfView : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
-        GetComponentInParent<EnemyMovement>().enabled = true;
+        foreach (GameObject x in enemylist)
+        {
+            x.GetComponent<EnemyMovement>().enabled = true;
+        }
         collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
         collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
     }

@@ -25,6 +25,7 @@ public class TweenEnemy : MonoBehaviour
 
     private void pindah()
     {
+        GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerEnemy").gameObject.SetActive(false);
         GameObject.Find("Player").GetComponent<PlayerMovement>().pindah(startingPoint);
         LeanTween.alphaCanvas(FadeInFadeOut, 0f, 2f);
         dialogTrigger.OnDialogFinish -= ketangkap;
