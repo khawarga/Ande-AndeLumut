@@ -7,10 +7,12 @@ public class PlayerMovement : MonoBehaviour
     private float moveSpeed = 15f;
     private Rigidbody2D rb;
     private Vector2 moveDirection;
+    public Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
+        animator.GetComponent<Animator>();
     }
 
     void Update()
@@ -28,6 +30,10 @@ public class PlayerMovement : MonoBehaviour
         {
             transform.rotation = Quaternion.Euler(0, 180, 0);
         }
+        animator.SetFloat("Horizontal", moveDirection.x);
+        animator.SetFloat("Vertical", moveDirection.y);
+        animator.SetFloat("Speed", moveDirection.sqrMagnitude);
+
     }
 
     private void FixedUpdate()
@@ -38,5 +44,9 @@ public class PlayerMovement : MonoBehaviour
     public void pindah(Transform startingPoint)
     {
         transform.position = new Vector3(startingPoint.position.x, startingPoint.position.y, startingPoint.position.z);
+        rb.velocity = Vector2.zero;
+        animator.SetFloat("Horizontal", 0);
+        animator.SetFloat("Vertical", 0);
+        animator.SetFloat("Speed", 0);
     }
 }

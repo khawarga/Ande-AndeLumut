@@ -10,6 +10,7 @@ public class PlayerObject : MonoBehaviour
     public bool rope = false;
     public bool penPaper = false;
     public Text objective;
+    public GameObject UI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -43,6 +44,7 @@ public class PlayerObject : MonoBehaviour
 
     private void updateUI()
     {
+        UI.SetActive(true);
         bool[] all = {greenKey, yellowKey, rope, penPaper };
         string[] all2 = {"greenKey", "yellowKey", "rope", "penPaper"};
         int temp = 0;
