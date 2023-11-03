@@ -83,8 +83,11 @@ public class DialogManager : MonoBehaviour
 
     IEnumerator ketikKata(string kata, string nama,string foto)
     {
+        if(foto != "")
+        {
+            charPotrait.sprite = Resources.Load<Sprite>(foto);
+        }
         textNama.text = nama;
-        charPotrait.sprite = Resources.Load<Sprite>(foto);
         textDialog.text = "";
         foreach (char huruf in kata.ToCharArray())
         {

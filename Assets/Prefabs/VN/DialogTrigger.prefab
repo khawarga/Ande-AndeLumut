@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1228485552215118391
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1228485552215118389}
+  - component: {fileID: 1228485552215118388}
+  m_Layer: 0
+  m_Name: DialogTrigger
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &1228485552215118389
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228485552215118391}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 960.0011, y: 540, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1228485552215118388
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1228485552215118391}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  dialog:
+    nama: []
+    foto: []
+    kalimat:
+    - Dewi Sekartaji beserta ibunya pun berhasil kabur dari sekapan.
+    - Dewi Sekartaji segera menuliskan surat dan mengirimkannya ke Kerajaan Kediri
+      supaya raja mengetahui apa yang mereka alami.
+    - Setelah itu, raja pun tahu akan perbuatan dari Ibu tiri Dewi Sekartaji tetapi
+      ibu tiri Dewi Sekartaji dan anaknya sudah melarikan diri terlebih dahulu.
+    - Setelah Dewi Sekartaji sampai di Kerajaan Kediri, Ia pun langsung mencari Pangeran
+      Panji. Akan tetapi Pangeran Panji sudah pergi untuk mencari Dewi Sekartaji.
+    - Dewi Sekartaji pun memutuskan untuk berkelana mencari Pangeran Panji
+  UI: {fileID: 0}
+  dialogBox: {fileID: 0}
