@@ -220,7 +220,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7659615451002696639, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
       propertyPath: NextScene
-      value: 
+      value: Level2-TepiSungai
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659615451129908121, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659615451129908121, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
+      propertyPath: m_BlocksRaycasts
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
@@ -240,6 +248,62 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 883168512}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.size
+      value: 19
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[4]
+      value: Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[5]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[6]
+      value: Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[7]
+      value: Klenting Merah
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[8]
+      value: Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[9]
+      value: Klenting Hijau
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[10]
+      value: Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[11]
+      value: Klenting Biru
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[12]
+      value: Klenting Merah
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[13]
+      value: Klenting Hijau
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[14]
+      value: Klenting Merah
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[15]
+      value: 
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[0]
       value: "Klenting Merah, Klenting Biru, Klenting Hijau pun sampai di sungai
         yang harus disebrangi agar bisa sampai ke tempat Ande \u2013 Ande Lumut. "
@@ -255,11 +319,72 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[3]
-      value: Seketika munculah Yuyu Kangkang.
+      value: Seketika munculah seekor Yuyu. Ia pun memperkenalkan dirinya
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[4]
-      value: LANJUTANNYA APAA AAAAA
+      value: Hai Klenting Merah, Klenting Biru, Klenting Hijau. Aku adalah Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[5]
+      value: Klenting Merah, Klenting Biru, Klenting Hijau pun terkejut
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[6]
+      value: Aku bisa membantu kalian menyebrang sungai ini. Kalian bisa naik ke
+        punggungku dan akan ku sebrangkan kalian.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[7]
+      value: Benarkah? Bagus lah kalau begitu. Cepat sebrangkan kami.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[8]
+      value: Eits, tunggu dulu. Aku meminta imbalan untuk bantuanku.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[9]
+      value: Apa yang kamu inginkan dari kami
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[10]
+      value: Aku meminta ciuman dari kalian setelah aku sebrangkan.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[11]
+      value: Kalau begitu tidak jadi kami meminta bantuanmu
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[12]
+      value: Eh tunggu dulu. Kalau kita tidak menyebrang lewat sungai ini, kita harus
+        memutar sangat jauh
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[13]
+      value: Tapi aku tidak ingin dicium
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[14]
+      value: Aku juga tidak mau, tetapi mau bagaimana lagi. Itu pun hanya satu ciuman
+        saja.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[15]
+      value: Akhirnya Klenting Biru dan Klenting Hijau pun setuju.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[16]
+      value: Setelah mereka semua disebrangkan oleh Yuyu Kangkang. Yuyu Kangkang
+        pun meminta imbalannya.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[17]
+      value: Dengan berat hati Klenting Merah, Klenting Biru dan Klenting Hijau pun
+        membiarkan Yuyu Kangkang mencium mereka.
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.kalimat.Array.data[18]
+      value: Setelah itu mereka pun melanjutkan perjalan mereka
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118389, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: m_RootOrder
@@ -311,6 +436,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+--- !u!114 &557134152 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+  m_PrefabInstance: {fileID: 557134151}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &883168511
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -406,6 +542,38 @@ PrefabInstance:
       propertyPath: m_Name
       value: DialogCanvas
       objectReference: {fileID: 0}
+    - target: {fileID: 2721924667260492013, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_enableWordWrapping
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0049744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0024567
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 557134152}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogTrigger
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924668110283173, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 14.495117
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
 --- !u!225 &883168512 stripped
@@ -451,6 +619,74 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1010673934
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1010673937}
+  - component: {fileID: 1010673936}
+  - component: {fileID: 1010673935}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1010673935
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010673934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 4f231c4fb786f3946a6b90b886c48677, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_HorizontalAxis: Horizontal
+  m_VerticalAxis: Vertical
+  m_SubmitButton: Submit
+  m_CancelButton: Cancel
+  m_InputActionsPerSecond: 10
+  m_RepeatDelay: 0.5
+  m_ForceModuleActive: 0
+--- !u!114 &1010673936
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010673934}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &1010673937
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1010673934}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 5
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &1123401202
 PrefabInstance:
   m_ObjectHideFlags: 0

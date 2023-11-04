@@ -386,6 +386,30 @@ PrefabInstance:
       propertyPath: m_HorizontalAlignment
       value: 8
       objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 1920
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_SizeDelta.y
+      value: 1080
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.x
+      value: 0.0049744
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982918, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_AnchoredPosition.y
+      value: -0.0024567
+      objectReference: {fileID: 0}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 1228485551178099875}
+    - target: {fileID: 2721924667665982919, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: dialogTrigger
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 35e8195c4eec2234184203e0f178a536, type: 3}
 --- !u!114 &1667221404 stripped
@@ -496,6 +520,17 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+--- !u!114 &1228485551178099875 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+  m_PrefabInstance: {fileID: 1228485551178099874}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bb980ec1c71d9704da2e5ac37212b5e1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &7454937488325525245
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -658,6 +693,14 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7659615451002696638, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659615451129908121, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
+      propertyPath: m_Interactable
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 7659615451129908121, guid: 6dcf46a9ae90c0a4eaad6840c49f72a8, type: 3}
+      propertyPath: m_BlocksRaycasts
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

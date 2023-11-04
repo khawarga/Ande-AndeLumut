@@ -62,7 +62,12 @@ public class DialogManager : MonoBehaviour
         }
         string name = nama.Dequeue();
         string kata = kalimat.Dequeue();
-        string gambar = foto.Dequeue();
+        string gambar = "";
+
+        if (foto.Count != 0)
+        {
+            gambar = foto.Dequeue();
+        }
 
         StopAllCoroutines();
         StartCoroutine(ketikKata(kata,name,gambar));
