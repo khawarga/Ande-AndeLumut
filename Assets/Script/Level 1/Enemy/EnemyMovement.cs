@@ -7,6 +7,8 @@ public class EnemyMovement : MonoBehaviour
 {
     [SerializeField] private Transform[] waypoints1;
     [SerializeField] private float moveSpeed = 2f;
+    [SerializeField] private GameObject sprite;
+    [SerializeField] private Animator anim;
 
     private int waypointIndex = 0;
     private int tanda = 0;
@@ -46,7 +48,6 @@ public class EnemyMovement : MonoBehaviour
         else if(tanda == 1)
         {
             transform.position = Vector2.MoveTowards(transform.position, waypoints1[waypointIndex].transform.position, moveSpeed * Time.deltaTime);
-
             if (gameObject.transform.position.x == waypoints1[waypointIndex].transform.position.x && gameObject.transform.position.y == waypoints1[waypointIndex].transform.position.y)
             {
                 if (waypointIndex != 0)
@@ -66,24 +67,37 @@ public class EnemyMovement : MonoBehaviour
 
     private void ubahArah(int index1, int index2)
     {
-        if (waypoints1[index1].transform.position.y > waypoints1[index2].transform.position.y)
+        anim.SetFloat("Speed", 1);
+        if (waypoints1[index1].transform.position.y > waypoints1[index2].transform.position.y)//bawah
         {
             transform.eulerAngles = new Vector3(0, 0, 180);
+            sprite.transform.eulerAngles = new Vector3(0, 0, 0);
+            anim.SetFloat("Vertical", -1);
+            anim.SetFloat("Horizontal", 0);
             return;
         }
-        else if(waypoints1[index1].transform.position.y < waypoints1[index2].transform.position.y)
+        else if(waypoints1[index1].transform.position.y < waypoints1[index2].transform.position.y)//atas
         {
             transform.eulerAngles = new Vector3(0, 0, 0);
+            sprite.transform.eulerAngles = new Vector3(0, 0, 0);
+            anim.SetFloat("Vertical", 1);
+            anim.SetFloat("Horizontal", 0);
             return;
         }
-        else if (waypoints1[index1].transform.position.x > waypoints1[index2].transform.position.x)
+        else if (waypoints1[index1].transform.position.x > waypoints1[index2].transform.position.x)//kiri
         {
             transform.eulerAngles = new Vector3(0, 0, 90);
+            sprite.transform.eulerAngles = new Vector3(180, 0, 180);
+            anim.SetFloat("Horizontal", 1);
+            anim.SetFloat("Vertical", 0);
             return;
         }
-        else if (waypoints1[index1].transform.position.x < waypoints1[index2].transform.position.x)
+        else if (waypoints1[index1].transform.position.x < waypoints1[index2].transform.position.x)//kanan
         {
             transform.eulerAngles = new Vector3(0, 0, -90);
+            sprite.transform.eulerAngles = new Vector3(0, 0, 0);
+            anim.SetFloat("Horizontal", -1);
+            anim.SetFloat("Vertical", 0);
             return;
         }
     }
