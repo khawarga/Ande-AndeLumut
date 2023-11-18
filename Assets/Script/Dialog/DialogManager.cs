@@ -55,6 +55,7 @@ public class DialogManager : MonoBehaviour
 
     public void nextKalimat()
     {
+   
         if (kalimat.Count == 0)
         {
             FindObjectOfType<DialogTrigger>().beres();
@@ -88,8 +89,10 @@ public class DialogManager : MonoBehaviour
 
     IEnumerator ketikKata(string kata, string nama,string foto)
     {
-        if(foto != "")
+        charPotrait.gameObject.SetActive(false);
+        if (foto != "")
         {
+            charPotrait.gameObject.SetActive(true);
             charPotrait.sprite = Resources.Load<Sprite>(foto);
         }
         else
