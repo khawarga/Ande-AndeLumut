@@ -13,6 +13,8 @@ public class DialogTrigger : MonoBehaviour
 
     public CanvasGroup dialogBox;
 
+    public CanvasGroup potrait;
+
     public event EventHandler OnDialogFinish;
 
     private void Start()
@@ -38,6 +40,11 @@ public class DialogTrigger : MonoBehaviour
             aktif = true;
             UI.SetActive(true);
             LeanTween.alphaCanvas(dialogBox, 1f, 1f);
+            if(potrait != null)
+            {
+                potrait.gameObject.SetActive(true);
+                LeanTween.alphaCanvas(potrait, 1f, 1f);
+            }
             FindObjectOfType<DialogManager>().startDialog(dialog);
         }
     }
@@ -65,8 +72,12 @@ public class DialogTrigger : MonoBehaviour
         LeanTween.alphaCanvas(dialogBox, 0f, 1f);
         aktif = false;
         UI.SetActive(false);
+        if(potrait != null)
+        {
+            potrait.gameObject.SetActive(false);
+        }
 
-        if(OnDialogFinish != null)
+        if (OnDialogFinish != null)
         {
             OnDialogFinish?.Invoke(this, EventArgs.Empty);
         }

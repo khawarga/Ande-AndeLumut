@@ -46,10 +46,10 @@ public class PlayerObject : MonoBehaviour
     {
         UI.SetActive(true);
         bool[] all = {greenKey, yellowKey, rope, penPaper };
-        string[] all2 = {"greenKey", "yellowKey", "rope", "penPaper"};
+        string[] all2 = {"Kunci Hijau", "Kunci Kuning", "Tali", "Kertas dan Pena"};
         int temp = 0;
 
-        objective.text = "Kumpulkan Barang Penting \n\n";
+        objective.text = "Kumpulkan Barang Penting\n\n";
 
         foreach(bool x in all)
         {

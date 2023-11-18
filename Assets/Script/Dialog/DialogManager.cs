@@ -92,6 +92,10 @@ public class DialogManager : MonoBehaviour
         {
             charPotrait.sprite = Resources.Load<Sprite>(foto);
         }
+        else
+        {
+            charPotrait.sprite = null;
+        }
         textNama.text = nama;
         textDialog.text = "";
         foreach (char huruf in kata.ToCharArray())

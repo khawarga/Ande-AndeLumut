@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class PlayerMovement : MonoBehaviour
 {
-    private float moveSpeed = 15f;
+    public float moveSpeed = 15f;
     private Rigidbody2D rb;
     private Vector2 moveDirection;
-    public Animator animator;
+    private Animator animator;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
-        animator.GetComponent<Animator>();
+        animator = GetComponent<Animator>();
     }
 
     void Update()
