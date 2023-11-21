@@ -11,6 +11,8 @@ GameObject:
   - component: {fileID: 5166569703302524919}
   - component: {fileID: 5166569703302524916}
   - component: {fileID: 5166569703302524917}
+  - component: {fileID: 1688277903789692375}
+  - component: {fileID: 1452945383777083954}
   m_Layer: 0
   m_Name: Ayam Betina1_0
   m_TagString: Untagged
@@ -106,3 +108,46 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &1688277903789692375
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166569703302524914}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8c105f0a1b89fc441bd32b4e8d47339c, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  waypoints1: []
+  moveSpeed: 2
+  sprite: {fileID: 5166569703302524914}
+  anim: {fileID: 5166569703302524917}
+  loop: 1
+--- !u!61 &1452945383777083954
+BoxCollider2D:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5166569703302524914}
+  m_Enabled: 1
+  m_Density: 1
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_UsedByEffector: 0
+  m_UsedByComposite: 0
+  m_Offset: {x: 0, y: 0}
+  m_SpriteTilingProperty:
+    border: {x: 0, y: 0, z: 0, w: 0}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.9066666, y: 2.2}
+    newSize: {x: 5.72, y: 6.6}
+    adaptiveTilingThreshold: 0.5
+    drawMode: 0
+    adaptiveTiling: 0
+  m_AutoTiling: 0
+  serializedVersion: 2
+  m_Size: {x: 1.9066666, y: 2.2}
+  m_EdgeRadius: 0

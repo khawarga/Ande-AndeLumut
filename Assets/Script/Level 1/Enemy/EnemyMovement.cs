@@ -15,6 +15,8 @@ public class EnemyMovement : MonoBehaviour
     private int waypointIndexTemp;
     [SerializeField]private bool loop;
 
+    public bool ayam;
+
     // Update is called once per frame
     void Update()
     {
@@ -67,7 +69,25 @@ public class EnemyMovement : MonoBehaviour
 
     private void ubahArah(int index1, int index2)
     {
+        if (ayam)
+        {
+            if (waypoints1[index1].transform.position.x < waypoints1[index2].transform.position.x)//kanan
+            {
+                transform.eulerAngles = new Vector3(0, 0, 90);
+                sprite.transform.eulerAngles = new Vector3(180, 0, 180);
+                return;
+            }
+            else if (waypoints1[index1].transform.position.x > waypoints1[index2].transform.position.x)//kiri
+            {
+                transform.eulerAngles = new Vector3(0, 0, -90);
+                sprite.transform.eulerAngles = new Vector3(0, 0, 0);
+                return;
+            }
+            return;
+        }
+
         anim.SetFloat("Speed", 1);
+        
         if (waypoints1[index1].transform.position.y > waypoints1[index2].transform.position.y)//bawah
         {
             transform.eulerAngles = new Vector3(0, 0, 180);
