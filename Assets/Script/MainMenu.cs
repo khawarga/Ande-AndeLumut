@@ -10,10 +10,6 @@ public class MainMenu : MonoBehaviour
        SceneManager.LoadScene("VisualNovel1-Prolog");
     }
 
-    public void Setting()
-    {
-
-    }
 
     public void ExitGame()
     {

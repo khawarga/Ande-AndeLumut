@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 5a2e787cd9de7704d89a51738dbd68fa
+guid: 7ca0c8b4c2356b64ea242df37c6b8cc7
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 300
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: UI Slider2_0
+      name: Ayam Jantan Fix3_0
       rect:
         serializedVersion: 2
-        x: 422
-        y: 193
-        width: 137
-        height: 31
+        x: 572
+        y: 108
+        width: 726
+        height: 836
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,8 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c4d4749a6fcc5b49b6311f849f86011
-      internalID: 1253371297
+      spriteID: 7362d91fe3d141d42b2d98f6dc95bb04
+      internalID: -1036182870
       vertices: []
       indices: 
       edges: []
@@ -148,7 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      UI Slider2_0: 1253371297
+      Ayam Jantan Fix3_0: -1036182870
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
