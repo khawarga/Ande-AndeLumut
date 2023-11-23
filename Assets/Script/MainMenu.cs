@@ -15,8 +15,12 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.ClearOptions();
 
         List<string> options = new List<string>();
+        options.Add("1920 x 1080");
+        options.Add("1600 x 900");
+        options.Add("1280 x 720");
+        resolutionDropdown.AddOptions(options);
 
-        int currentResolutionIndex = 0;
+        /* int currentResolutionIndex = 0;
         for (int i = 0; i < resolutions.Length; i++)
         {
             string option = resolutions[i].width + " x " + resolutions[i].height;
@@ -32,6 +36,7 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.AddOptions(options);
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
+        */
     }
 
 
@@ -50,5 +55,30 @@ public class MainMenu : MonoBehaviour
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
+    }
+
+    public void HandleInputData(int val)
+    {
+        if (val == 0)
+        {
+            Screen.SetResolution(1920, 1080, Screen.fullScreen);
+            Debug.Log("1920 x 1080");
+        }
+        if (val == 1)
+        {
+            Screen.SetResolution(1600, 900, Screen.fullScreen);
+            Debug.Log("1600 x 900");
+        }
+        if (val == 2)
+        {
+            Screen.SetResolution(1280, 720, Screen.fullScreen);
+            Debug.Log("1280 x 720");
+        }
+    }
+
+
+    public void SetFullScreen(bool isFullscreen)
+    {
+        Screen.fullScreen = isFullscreen;
     }
 }
