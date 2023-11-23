@@ -11,6 +11,10 @@ public class TweenVN : MonoBehaviour
 
     public string NextScene;
 
+    public GameObject YuyuKangkang;
+
+    private int move;
+
     private void Awake()
     {
         dialogTrigger = FindObjectOfType<DialogTrigger>();
@@ -20,6 +24,21 @@ public class TweenVN : MonoBehaviour
     private void Start()
     {
         LeanTween.alphaCanvas(FadeInFadeOut, 0f, 2.2f).setOnComplete(dialog);
+    }
+
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Return))
+        {
+            if (YuyuKangkang == null) return;
+
+            move++;
+
+            if (move == 3)
+            {
+                LeanTween.moveLocalX(YuyuKangkang, -651, 1f);
+            }
+        }
     }
 
     private void dialog()

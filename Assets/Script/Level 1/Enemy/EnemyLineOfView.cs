@@ -30,7 +30,7 @@ public class EnemyLineOfView : MonoBehaviour
             }
             //GetComponentInParent<EnemyMovement>().enabled = false;
             collision.gameObject.GetComponent<PlayerMovement>().enabled = false;
-            collision.gameObject.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
+            collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             dialogTrigger.dialogTrigger();
             tweenEnemy.addListener();
         }
@@ -43,6 +43,7 @@ public class EnemyLineOfView : MonoBehaviour
             x.GetComponent<EnemyMovement>().enabled = true;
         }
         collision.gameObject.GetComponent<PlayerMovement>().enabled = true;
-        collision.gameObject.GetComponent<Rigidbody2D>().isKinematic = false;
+        collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
+        collision.gameObject.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
     }
 }
