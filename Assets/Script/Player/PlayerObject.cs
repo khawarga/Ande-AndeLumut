@@ -9,11 +9,15 @@ public class PlayerObject : MonoBehaviour
     public bool yellowKey = false;
     public bool rope = false;
     public bool penPaper = false;
+    public bool ayam = false;
+    public bool kotoranAyam = false;
     public Text objective;
     public GameObject UI;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        if (ayam) return;
+
         if (collision.gameObject.tag.Equals("GreenKey"))
         {
             greenKey = true;
@@ -39,22 +43,31 @@ public class PlayerObject : MonoBehaviour
 
     private void OnEnable()
     {
+        UI.SetActive(true);
         updateUI();
     }
 
     private void updateUI()
     {
-        UI.SetActive(true);
-        bool[] all = {greenKey, yellowKey, rope, penPaper };
-        string[] all2 = {"Kunci Hijau", "Kunci Kuning", "Tali", "Kertas dan Pena"};
-        int temp = 0;
-
-        objective.text = "Kumpulkan Barang Penting\n\n";
-
-        foreach(bool x in all)
+        if (ayam)
         {
-            objective.text += (x == true) ? all2[temp] + " 1 / 1\n" : all2[temp] + " 0 / 1\n";
-            temp++;
+            objective.text = "Carilah Kotoran Ayam\n\n";
+
+            objective.text += (kotoranAyam == true) ? "Kotoran Ayam" + " 1 / 1\n" : "Kotoran Ayam" + " 0 / 1\n";
+        }
+        else
+        {
+            bool[] all = { greenKey, yellowKey, rope, penPaper };
+            string[] all2 = { "Kunci Hijau", "Kunci Kuning", "Tali", "Kertas dan Pena" };
+            int temp = 0;
+
+            objective.text = "Kumpulkan Barang Penting\n\n";
+
+            foreach (bool x in all)
+            {
+                objective.text += (x == true) ? all2[temp] + " 1 / 1\n" : all2[temp] + " 0 / 1\n";
+                temp++;
+            }
         }
     }
 
@@ -76,5 +89,16 @@ public class PlayerObject : MonoBehaviour
     public bool getPenPaper()
     {
         return penPaper;
+    }
+
+    public bool getKotoranAyam()
+    {
+        return kotoranAyam;
+    }
+
+    public void setKotoranAyam(bool value)
+    {
+        kotoranAyam = value;
+        updateUI();
     }
 }

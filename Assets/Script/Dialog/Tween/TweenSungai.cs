@@ -44,6 +44,7 @@ public class TweenSungai : MonoBehaviour
     {
         GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogMulai").gameObject.SetActive(false);
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+        GameObject.Find("Player").GetComponent<PlayerObject>().enabled = true;
         dialogTrigger.OnDialogFinish -= aktif;
     }
 }

@@ -19,26 +19,13 @@ public class AyamInteraksi : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.E) && masuk)
         {
-            if (jantan.Equals(true))
+            if (player.GetComponent<PlayerObject>().getKotoranAyam().Equals(true))
             {
-                Debug.Log("dapat tai");
-                GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(true);
+                GameObject temp = GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBeres").gameObject;
 
-                foreach (GameObject x in ayamList)
-                {
-                    x.GetComponent<EnemyMovement>().enabled = false;
-                }
+                temp.SetActive(true);
 
-                player.GetComponent<PlayerMovement>().enabled = false;
-
-                dialogTrigger.dialogTrigger();
-                dialogTrigger.OnDialogFinish += disableDialogtrigger;
-            }
-            else
-            {
-                Debug.Log("zonk");
-
-                GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(true);
+                DialogTrigger temp2 = temp.GetComponent<DialogTrigger>();
 
                 foreach (GameObject x in ayamList)
                 {
@@ -48,8 +35,46 @@ public class AyamInteraksi : MonoBehaviour
                 player.GetComponent<PlayerMovement>().enabled = false;
                 player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
 
-                dialogTrigger.dialogTrigger();
-                dialogTrigger.OnDialogFinish += disableDialogtrigger;
+                temp2.dialogTrigger();
+                temp2.OnDialogFinish += disableDialogtrigger;
+            }
+            else
+            {
+                if (jantan.Equals(true))
+                {
+                    Debug.Log("dapat tai");
+                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(true);
+
+                    foreach (GameObject x in ayamList)
+                    {
+                        x.GetComponent<EnemyMovement>().enabled = false;
+                    }
+
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+
+                    dialogTrigger.dialogTrigger();
+                    dialogTrigger.OnDialogFinish += disableDialogtrigger;
+
+                    player.GetComponent<PlayerObject>().setKotoranAyam(true);
+                }
+                else
+                {
+                    Debug.Log("zonk");
+
+                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(true);
+
+                    foreach (GameObject x in ayamList)
+                    {
+                        x.GetComponent<EnemyMovement>().enabled = false;
+                    }
+
+                    player.GetComponent<PlayerMovement>().enabled = false;
+                    player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+
+                    dialogTrigger.dialogTrigger();
+                    dialogTrigger.OnDialogFinish += disableDialogtrigger;
+                }
             }
         }
     }
@@ -58,10 +83,13 @@ public class AyamInteraksi : MonoBehaviour
     {
         GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(false);
         GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(false);
+        GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBeres").gameObject.SetActive(false);
 
         player.GetComponent<PlayerMovement>().enabled = true;
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
+
+        dialogTrigger.OnDialogFinish -= disableDialogtrigger;
 
         foreach (GameObject x in ayamList)
         {
