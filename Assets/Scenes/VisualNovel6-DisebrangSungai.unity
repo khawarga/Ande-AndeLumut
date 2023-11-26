@@ -300,15 +300,16 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[5]
-      value: Apa yang kamu lakukan!
+      value: Cepatlah aku mau imbalanku!
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[6]
-      value: Sekarang silahkan cium aku.
+      value: Sekarang kamu boleh cium aku.
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[7]
-      value: Apa kamu sudah gila? Aku tidak jadi meminta imbalanku, cepat pergi sana!
+      value: Apa itu yang ada di mukamu??? Kalau begitu aku tidak jadi meminta imbalanku,
+        Cepat enyah lah dari hadapanku
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[8]
@@ -875,10 +876,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3

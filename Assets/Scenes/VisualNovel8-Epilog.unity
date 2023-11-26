@@ -1200,7 +1200,11 @@ MonoBehaviour:
   dialog:
     nama: []
     foto: []
-    kalimat: []
+    kalimat:
+    - Sampainya di kerajaan. Pangeran Panji Asmarabangun dan Dewi Sekartaji melaksanakan
+      pernikahan mereka.
+    - Dengan Pangeran Panji Asmarabangun dan Dewi Sekartaji telah menikah, dan Kerjaan
+      Jenggala dan Kediri telah bersatu kembali
   UI: {fileID: 5260064566023685348}
   dialogBox: {fileID: 61093625094700606}
   potrait: {fileID: 0}

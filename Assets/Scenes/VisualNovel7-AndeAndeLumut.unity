@@ -520,19 +520,19 @@ MonoBehaviour:
     - Tidak lama setelah ketiga klenting ditolak oleh Ande Ande Lumut, datanglah
       Klenting Kuning.
     - Ande - Ande Lumut pun terkejut dan merasa senang. Ibu Ande - Ande Lumut pun
-      bertanya padanya.
-    - Bagaimana nak? Apakah kamu menyukai gadis ini?
+      bertanya tanya.
+    - Bagaimana nak? Apakah kamu tertarik dengan gadis ini?
     - Iya Ibunda, Klenting Kuninglah gadis yang aku cari - cari.
     - Apakah kau tidak apa - apa nak? Kau lebih memilih gadis yang berlumuran kotoran
       ayam daripada gadis - gadis lain yang jauh lebih cantik?
-    - Ibunda, sesungguhnya Klenting Kuning adalah gadis yang cerdik.
-    - Ia melumuri dirinya dengan kotoran ayam agar tidak dicium oleh Yuyu Kangkang.
+    - Ibunda, sesungguhnya Klenting Kuning adalah gadis yang pintar.
+    - Ia melumuri mukanya dengan kotoran ayam agar tidak dicium oleh Yuyu Kangkang.
     - Setelah itu Ande - Ande Lumut pun mendekati Klenting Kuning.
     - Walaupun kau berlumuran kotoran ayam, tetapi aku tetap mengetahui bahwa kau
       sesungguhnya bahwa Dewi Sekartaji.
     - Klenting Kuning atau nama aslinya yaitu Dewi Sekartaji pun terkejut.
     - Bagaimana kau bisa mengetahui nama asliku?
-    - Apakah kamu tidak mengenaliku?
+    - Kamu tidak mengenaliku?
     - Apakah kamu Pangeran Panji Asmarabangun?
     - Benar sekali. Aku telah mencari mu kemana - mana. Aku mengadakan sayembara
       ini untuk mencari dirimu.
@@ -866,7 +866,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 14.495178, y: -387.4818}
+  m_AnchoredPosition: {x: 14.495117, y: -387.48193}
   m_SizeDelta: {x: -130.67188, y: -853.87134}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &2721924666802859186
@@ -1327,10 +1327,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
+  m_ReferenceResolution: {x: 1920, y: 1080}
   m_ScreenMatchMode: 0
   m_MatchWidthOrHeight: 0
   m_PhysicalUnit: 3
