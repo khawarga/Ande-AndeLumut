@@ -11,9 +11,13 @@ public class TweenVN : MonoBehaviour
 
     public string NextScene;
 
-    public GameObject YuyuKangkang;
+    public GameObject potraitMove;
 
     private int move;
+
+    public int max;
+
+    public float x;
 
     private void Awake()
     {
@@ -30,13 +34,13 @@ public class TweenVN : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Return))
         {
-            if (YuyuKangkang == null) return;
+            if (potraitMove == null) return;
 
             move++;
 
-            if (move == 3)
+            if (move == max)
             {
-                LeanTween.moveLocalX(YuyuKangkang, -651, 1f);
+                LeanTween.moveLocalX(potraitMove, x, 1f);
             }
         }
     }

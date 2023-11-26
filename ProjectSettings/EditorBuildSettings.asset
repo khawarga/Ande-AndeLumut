@@ -32,4 +32,10 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Scenes/VisualNovel6-DisebrangSungai.unity
     guid: 974880c4da632134b86f7f3b915ac205
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel7-AndeAndeLumut.unity
+    guid: f0fa6eb7ca159e14a9d2a2e451a1e18f
+  - enabled: 1
+    path: Assets/Scenes/VisualNovel8-Epilog.unity
+    guid: 106d591a5f5b5b549a9492121ff06f23
   m_configObjects: {}

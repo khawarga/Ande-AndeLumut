@@ -1890,7 +1890,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   FadeInFadeOut: {fileID: 7659615451603401674}
   NextScene: Level2-TepiSungai
-  YuyuKangkang: {fileID: 1447666349}
+  potraitMove: {fileID: 1447666349}
+  max: 3
+  x: -651
 --- !u!224 &7659615450669712365
 RectTransform:
   m_ObjectHideFlags: 0
