@@ -19,6 +19,8 @@ public class TweenVN : MonoBehaviour
 
     public float x;
 
+    public string newBGM;
+
     private void Awake()
     {
         dialogTrigger = FindObjectOfType<DialogTrigger>();
@@ -58,5 +60,10 @@ public class TweenVN : MonoBehaviour
     private void pindah()
     {
         SceneManager.LoadScene(NextScene);
+
+        if(newBGM != null)
+        {
+            FindObjectOfType<BGM>().setBGM(newBGM);
+        }
     }
 }

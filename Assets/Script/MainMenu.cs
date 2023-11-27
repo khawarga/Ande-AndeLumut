@@ -3,13 +3,20 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using UnityEngine.SceneManagement;
+using System.Threading.Tasks;
 
 public class MainMenu : MonoBehaviour
 {
     public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
+
+    [SerializeField]
+    private CanvasGroup Blur;
+
     private void Start()
     {
+        LeanTween.alphaCanvas(Blur, 0f, 2.2f).setOnComplete(enableMainMenu);
+
         resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
@@ -39,10 +46,19 @@ public class MainMenu : MonoBehaviour
         */
     }
 
-
-    public void StartGame()
+    private void enableMainMenu()
     {
-       SceneManager.LoadScene("VisualNovel1-Prolog");
+        GameObject.Find("Canvas").GetComponent<Transform>().Find("MainMenu").gameObject.SetActive(true);
+    }
+
+
+    public async void StartGame()
+    {
+        LeanTween.alphaCanvas(Blur, 1f, 2.2f);
+
+        await Task.Delay(2300);
+
+        SceneManager.LoadScene("VisualNovel1-Prolog");
     }
 
 
@@ -75,7 +91,6 @@ public class MainMenu : MonoBehaviour
             Debug.Log("1280 x 720");
         }
     }
-
 
     public void SetFullScreen(bool isFullscreen)
     {
