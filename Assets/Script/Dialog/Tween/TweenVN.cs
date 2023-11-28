@@ -19,7 +19,7 @@ public class TweenVN : MonoBehaviour
 
     public float x;
 
-    public string newBGM;
+    public bool toLevel2;
 
     private void Awake()
     {
@@ -59,11 +59,11 @@ public class TweenVN : MonoBehaviour
 
     private void pindah()
     {
-        SceneManager.LoadScene(NextScene);
-
-        if(newBGM != null)
+        if (toLevel2)
         {
-            FindObjectOfType<BGM>().setBGM(newBGM);
+            GameObject.Find("BGM").GetComponent<BGM>().setBGM("BGMLevel2");
         }
+
+        SceneManager.LoadScene(NextScene);
     }
 }

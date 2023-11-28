@@ -32,6 +32,8 @@ public class TweenProlog : MonoBehaviour
 
     private void pindah()
     {
+        GameObject.Find("BGM").GetComponent<BGM>().setBGM("BGMLevel1");
+
         SceneManager.LoadScene("Level1-Penjara");
     }
 }

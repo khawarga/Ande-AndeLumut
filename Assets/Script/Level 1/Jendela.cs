@@ -86,6 +86,8 @@ public class Jendela : MonoBehaviour
 
     private void changeScene()
     {
+        GameObject.Find("BGM").GetComponent<BGM>().setBGM("BGMVN");
+
         SceneManager.LoadScene("VisualNovel2-DiluarPenjara");
     }
 }

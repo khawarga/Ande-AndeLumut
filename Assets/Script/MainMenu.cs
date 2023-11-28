@@ -13,6 +13,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private CanvasGroup Blur;
 
+    [SerializeField]
+    private GameObject tutorial;
+
     private void Start()
     {
         LeanTween.alphaCanvas(Blur, 0f, 2.2f).setOnComplete(enableMainMenu);
@@ -57,6 +60,15 @@ public class MainMenu : MonoBehaviour
         LeanTween.alphaCanvas(Blur, 1f, 2.2f);
 
         await Task.Delay(2300);
+
+        LeanTween.moveLocalY(tutorial, 0, 1f).setEase(LeanTweenType.easeSpring);
+    }
+
+    public async void goToGame()
+    {
+        LeanTween.moveLocalY(tutorial, 1500f, 1f);
+
+        await Task.Delay(1100);
 
         SceneManager.LoadScene("VisualNovel1-Prolog");
     }

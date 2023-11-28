@@ -45,8 +45,16 @@ public class TweenEpilog : MonoBehaviour
         LeanTween.moveLocalX(Button, 0, 1f).setEase(LeanTweenType.easeInOutBounce);
     }
 
-    public void backToMainMenu()
+    public async void backToMainMenu()
     {
+        LeanTween.moveLocalY(Text, -899, 1f).setEase(LeanTweenType.easeInElastic);
+
+        LeanTween.moveLocalY(Button, -899, 1f).setEase(LeanTweenType.easeInElastic);
+        
+        await Task.Delay(1100);
+
+        GameObject.Find("BGM").GetComponent<BGM>().setBGM("BGMMainMenu");
+
         SceneManager.LoadScene(0);
     }
 }

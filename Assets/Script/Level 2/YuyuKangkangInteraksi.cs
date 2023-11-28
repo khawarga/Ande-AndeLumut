@@ -85,6 +85,8 @@ public class YuyuKangkangInteraksi : MonoBehaviour
 
     private void changeScene()
     {
+        GameObject.Find("BGM").GetComponent<BGM>().setBGM("BGMVN");
+
         SceneManager.LoadScene("VisualNovel6-DisebrangSungai");
     }
 }

@@ -51,7 +51,7 @@ public class PlayerObject : MonoBehaviour
     {
         if (ayam)
         {
-            objective.text = "Carilah Kotoran Ayam\n\n";
+            objective.text = "Carilah Kotoran Ayam\n\n\n";
 
             objective.text += (kotoranAyam == true) ? "Kotoran Ayam" + " 1 / 1\n" : "Kotoran Ayam" + " 0 / 1\n";
         }
