@@ -1788,6 +1788,7 @@ GameObject:
   - component: {fileID: 801453325}
   - component: {fileID: 801453327}
   - component: {fileID: 801453328}
+  - component: {fileID: 801453329}
   m_Layer: 0
   m_Name: YuyuKangkang
   m_TagString: YuyuKangkang
@@ -1901,6 +1902,27 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   FadeInFadeOut: {fileID: 1273359074}
+--- !u!95 &801453329
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 801453324}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 54882edf2cbf06643a490ca59cba4765, type: 2}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
 --- !u!114 &819977108
 MonoBehaviour:
   m_ObjectHideFlags: 0
