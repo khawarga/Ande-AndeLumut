@@ -51,22 +51,32 @@ public class PlayerObject : MonoBehaviour
     {
         if (ayam)
         {
-            objective.text = "Carilah Kotoran Ayam\n\n\n";
-
-            objective.text += (kotoranAyam == true) ? "Kotoran Ayam" + " 1 / 1\n" : "Kotoran Ayam" + " 0 / 1\n";
+            objective.text = (kotoranAyam == true) ? "Pergi ke Yuyu Kangkang\n\n\nKotoran Ayam" + " 1 / 1\n" : "Carilah Kotoran Ayam\n\n\nKotoran Ayam" + " 0 / 1\n";
         }
         else
         {
             bool[] all = { greenKey, yellowKey, rope, penPaper };
             string[] all2 = { "Kunci Hijau", "Kunci Kuning", "Tali", "Kertas dan Pena" };
             int temp = 0;
+            int bener = 0;
 
-            objective.text = "Kumpulkan Barang Penting\n\n";
+            objective.text = "Carilah Barang Penting\n\n";
 
             foreach (bool x in all)
             {
                 objective.text += (x == true) ? all2[temp] + " 1 / 1\n" : all2[temp] + " 0 / 1\n";
                 temp++;
+                if (x == true) bener++;
+            }
+
+            if(bener == 4)
+            {
+                objective.text = "Kaburlah melalui jendela\n\n";
+                foreach (bool x in all)
+                {
+                    objective.text += (x == true) ? all2[temp] + " 1 / 1\n" : all2[temp] + " 0 / 1\n";
+                    temp++;
+                }
             }
         }
     }

@@ -11,6 +11,11 @@ public class DialogManager : MonoBehaviour
     public TMP_Text textDialog;
     public Image charPotrait;
 
+    public GameObject nameBox;
+    public AudioSource typingSound;
+
+    private bool typing;
+
     private Queue<string> kalimat;
     private Queue<string> nama;
     private Queue<string> foto;
@@ -89,6 +94,8 @@ public class DialogManager : MonoBehaviour
 
     IEnumerator ketikKata(string kata, string nama,string foto)
     {
+        typing = true;
+
         charPotrait.gameObject.SetActive(false);
         if (foto != "")
         {
@@ -99,21 +106,49 @@ public class DialogManager : MonoBehaviour
         {
             charPotrait.sprite = null;
         }
+
+        if(nama != "")
+        {
+            nameBox.SetActive(true);
+        }
+        else
+        {
+            nameBox.SetActive(false);
+        }
         textNama.text = nama;
         textDialog.text = "";
+
+        typingSound.enabled = true;
+
         foreach (char huruf in kata.ToCharArray())
         {
             textDialog.text += huruf;
             yield return null;
         }
+
+        typingSound.enabled = false;
+        typing = false;
     }
+
     IEnumerator ketikKata2(string kata)
     {
+        typing = true;
+
         textDialog.text = "";
+
+        typingSound.enabled = true;
+
         foreach (char huruf in kata.ToCharArray())
         {
             textDialog.text += huruf;
             yield return null;
         }
+        typingSound.enabled = false;
+        typing = false;
+    }
+
+    public bool getTyping()
+    {
+        return typing;
     }
 }

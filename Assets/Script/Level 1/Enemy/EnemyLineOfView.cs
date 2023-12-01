@@ -23,7 +23,6 @@ public class EnemyLineOfView : MonoBehaviour
         GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerEnemy").gameObject.SetActive(true);
         if (collision.gameObject.tag.Equals("Player"))
         {
-            await Task.Delay(500);
             foreach(GameObject x in enemylist)
             {
                 x.GetComponent<EnemyMovement>().enabled = false;

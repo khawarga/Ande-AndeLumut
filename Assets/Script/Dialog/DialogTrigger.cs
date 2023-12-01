@@ -53,6 +53,8 @@ public class DialogTrigger : MonoBehaviour
     {
         if (aktif)
         {
+            if (FindObjectOfType<DialogManager>().getTyping() == true) return;
+
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (dialog.nama.Length.Equals(0))

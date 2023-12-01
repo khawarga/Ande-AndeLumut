@@ -74,8 +74,12 @@ public class MainMenu : MonoBehaviour
     }
 
 
-    public void ExitGame()
+    public async void ExitGame()
     {
+        LeanTween.alphaCanvas(Blur, 1f, 2.2f);
+
+        await Task.Delay(2500);
+
         Application.Quit();
     }
 
