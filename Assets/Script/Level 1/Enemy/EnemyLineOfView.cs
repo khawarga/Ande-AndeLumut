@@ -16,9 +16,13 @@ public class EnemyLineOfView : MonoBehaviour
     private void Start()
     {
         enemylist = GameObject.FindGameObjectsWithTag("Enemy");
+
+        PauseMenu temp = GameObject.Find("CanvasPauseMenu").GetComponent<PauseMenu>();
+
+        temp.setEnemy(enemylist);
     }
 
-    private async void OnTriggerEnter2D(Collider2D collision)
+    private void OnTriggerEnter2D(Collider2D collision)
     {
         GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerEnemy").gameObject.SetActive(true);
         if (collision.gameObject.tag.Equals("Player"))

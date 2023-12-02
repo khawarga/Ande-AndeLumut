@@ -14,6 +14,8 @@ public class TweenEpilog : MonoBehaviour
     private GameObject Text;
     [SerializeField]
     private GameObject Button;
+    [SerializeField]
+    private GameObject credit;
 
     private void Awake()
     {
@@ -33,7 +35,16 @@ public class TweenEpilog : MonoBehaviour
 
     private void Ending(object sender, System.EventArgs e)
     {
-        LeanTween.alphaCanvas(FadeInFadeOut, 1f, 2.2f).setOnComplete(Ending2);
+        LeanTween.alphaCanvas(FadeInFadeOut, 1f, 2.2f).setOnComplete(creditMuncul);
+    }
+
+    private async void creditMuncul()
+    {
+        LeanTween.moveLocalY(credit, 0, 2f).setEase(LeanTweenType.easeInElastic);
+
+        await Task.Delay(7000);
+
+        LeanTween.moveLocalY(credit, 2000, 2f).setEase(LeanTweenType.easeInElastic).setOnComplete(Ending2);
     }
 
     private async void Ending2()

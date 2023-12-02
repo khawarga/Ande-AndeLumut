@@ -127,6 +127,9 @@ public class DialogManager : MonoBehaviour
         }
 
         typingSound.enabled = false;
+
+        yield return new WaitForSecondsRealtime(1);
+
         typing = false;
     }
 
@@ -144,6 +147,9 @@ public class DialogManager : MonoBehaviour
             yield return null;
         }
         typingSound.enabled = false;
+
+        yield return new WaitForSecondsRealtime(1);
+
         typing = false;
     }
 
