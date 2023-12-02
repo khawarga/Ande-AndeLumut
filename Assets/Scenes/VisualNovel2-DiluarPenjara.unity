@@ -1012,9 +1012,61 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 2721924666553394751}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: potrait
+      value: 
+      objectReference: {fileID: 7917526737962966245}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 7917526737962966245}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.size
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[1]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[2]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[3]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[4]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Narator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[1]
+      value: Narator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[2]
+      value: Narator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[3]
+      value: Narator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[4]
+      value: Narator
+      objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118389, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: m_RootOrder
       value: 3

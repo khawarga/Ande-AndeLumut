@@ -159,15 +159,15 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     nama:
-    - 
-    - 
-    - 
-    - 
+    - Narator
+    - Narator
+    - Narator
+    - Narator
     foto:
-    - 
-    - 
-    - 
-    - 
+    - Border Avatar2
+    - Border Avatar2
+    - Border Avatar2
+    - Border Avatar2
     kalimat:
     - Pada zaman dahulu, terdapat sebuah kerajaan yang bernama Kerajaan Kahuripan.
       Tetapi kerjaan tersebut terbagi menjadi Kerajaan Kediri dan Kerajaan Jenggala.
@@ -181,7 +181,7 @@ MonoBehaviour:
       disekap oleh ibu tirinya.
   UI: {fileID: 2721924667141954432}
   dialogBox: {fileID: 7917526738415378778}
-  potrait: {fileID: 0}
+  potrait: {fileID: 7917526738415378778}
 --- !u!4 &857619148
 Transform:
   m_ObjectHideFlags: 0

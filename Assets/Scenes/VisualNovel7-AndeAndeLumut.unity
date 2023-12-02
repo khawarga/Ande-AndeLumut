@@ -1309,53 +1309,53 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     nama:
-    - 
-    - 
+    - Narator
+    - Narator
     - Klenting Merah
     - Ibu Ande Ande Lumut
     - Ande Ande Lumut
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Narator
+    - Narator
+    - Narator
+    - Narator
+    - Narator
     - Ibu Ande Ande Lumut
     - Ande Ande Lumut
     - Ibu Ande Ande Lumut
     - Ande Ande Lumut
     - Ande Ande Lumut
-    - 
+    - Narator
     - Ande Ande Lumut
-    - 
+    - Narator
     - Dewi Sekartaji
     - Ande Ande Lumut
     - Dewi Sekartaji
     - Panji Asmarabangun
-    - 
+    - Narator
     foto:
-    - 
-    - 
+    - Border Avatar2
+    - Border Avatar2
     - KlentingMerah
     - Ibu2
     - Ande
-    - 
-    - 
-    - 
-    - 
-    - 
+    - Border Avatar2
+    - Border Avatar2
+    - Border Avatar2
+    - Border Avatar2
+    - Border Avatar2
     - Ibu2
     - Ande
     - Ibu2
     - Ande
     - Ande
-    - 
+    - Border Avatar2
     - Ande
-    - 
+    - Border Avatar2
     - KlentingKuning
     - Ande
     - KlentingKuning
     - Ande
-    - 
+    - Border Avatar2
     kalimat:
     - Akhirnya Klenting Merah, Klenting HIjau, Klenting biru pun sampai di desa dimana
       Ande Ande Lumut berada.

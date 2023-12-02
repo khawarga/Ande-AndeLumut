@@ -346,12 +346,24 @@ PrefabInstance:
       value: 9
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[0]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.foto.Array.data[1]
       value: YuyuKangkang
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.foto.Array.data[2]
       value: KlentingKuning
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[3]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[4]
+      value: Border Avatar2
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.foto.Array.data[5]
@@ -366,8 +378,16 @@ PrefabInstance:
       value: YuyuKangkang
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.foto.Array.data[8]
+      value: Border Avatar2
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.size
       value: 9
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[0]
+      value: Narator
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.nama.Array.data[1]
@@ -376,6 +396,14 @@ PrefabInstance:
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.nama.Array.data[2]
       value: Klenting Kuning
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[3]
+      value: Narator
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[4]
+      value: Narator
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.nama.Array.data[5]
@@ -388,6 +416,10 @@ PrefabInstance:
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.nama.Array.data[7]
       value: Yuyu Kangkang
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: dialog.nama.Array.data[8]
+      value: Narator
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[0]

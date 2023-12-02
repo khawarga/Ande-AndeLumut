@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: e2c35bae1f7aca040b374b159916d461
+guid: 31201b832ba5b8e4582f1e26da65e670
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,7 +117,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Border Avatar_0
+      name: Border Avatar1_0
       rect:
         serializedVersion: 2
         x: 2862
@@ -131,29 +131,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 157df064d7cd48f4ca3d09ba15eb47a2
-      internalID: 783468045
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Border Avatar_1
-      rect:
-        serializedVersion: 2
-        x: 6082
-        y: 1999
-        width: 1988
-        height: 1214
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 091ae33e87dcd5442ba08c4d59bbaa5f
-      internalID: 1781143271
+      spriteID: 43328f483ac1e6545a3b5f5a023e8a24
+      internalID: 301139526
       vertices: []
       indices: 
       edges: []
@@ -169,8 +148,7 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Border Avatar_0: 783468045
-      Border Avatar_1: 1781143271
+      Border Avatar1_0: 301139526
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
