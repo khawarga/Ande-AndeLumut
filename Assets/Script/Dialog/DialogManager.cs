@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using System.Linq;
 
 public class DialogManager : MonoBehaviour
 {
@@ -12,6 +11,7 @@ public class DialogManager : MonoBehaviour
     public Image charPotrait;
 
     public GameObject nameBox;
+    public GameObject potraitBox;
     public AudioSource typingSound;
 
     private bool typing;
@@ -99,11 +99,13 @@ public class DialogManager : MonoBehaviour
         charPotrait.gameObject.SetActive(false);
         if (foto != "")
         {
+            potraitBox.SetActive(true);
             charPotrait.gameObject.SetActive(true);
             charPotrait.sprite = Resources.Load<Sprite>(foto);
         }
         else
         {
+            potraitBox.SetActive(false);
             charPotrait.sprite = null;
         }
 
