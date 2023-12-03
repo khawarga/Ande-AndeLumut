@@ -35,5 +35,7 @@ public class BGM : MonoBehaviour
     public void setBGM(string newBGM)
     {
         source.clip = Resources.Load<AudioClip>(newBGM);
+        source.enabled = false;
+        source.enabled = true;
     }
 }

@@ -15,6 +15,13 @@ public class AyamInteraksi : MonoBehaviour
 
     public GameObject player;
 
+    private void Start()
+    {
+        PauseMenu temp = GameObject.Find("CanvasPauseMenu").GetComponent<PauseMenu>();
+
+        temp.setEnemy(ayamList);
+    }
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.E) && masuk)

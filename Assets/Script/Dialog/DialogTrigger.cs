@@ -55,6 +55,10 @@ public class DialogTrigger : MonoBehaviour
         {
             if (FindObjectOfType<DialogManager>().getTyping() == true) return;
 
+            bool temp = GameObject.Find("CanvasPauseMenu").GetComponent<PauseMenu>().getPauseState();
+
+            if (temp) return;
+
             if (Input.GetKeyDown(KeyCode.Return))
             {
                 if (dialog.nama.Length.Equals(0))

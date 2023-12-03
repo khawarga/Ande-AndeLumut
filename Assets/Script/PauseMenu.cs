@@ -49,12 +49,26 @@ public class PauseMenu : MonoBehaviour
     {
         pauseState = true;
 
-        if (SceneManager.GetActiveScene().Equals("Level1-Penjara"))
+        blur.blocksRaycasts = true;
+
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Level1-Penjara")
         {
             foreach (GameObject x in enemylist)
             {
                 x.GetComponent<EnemyMovement>().enabled = false;
             }
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
+        }
+        if (scene.name == "Level2-TepiSungai")
+        {
+            //ayam
+            foreach (GameObject x in enemylist)
+            {
+                x.GetComponent<EnemyMovement>().enabled = false;
+            }
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         }
 
         LeanTween.alphaCanvas(blur, 0.7f, 2f);
@@ -68,18 +82,31 @@ public class PauseMenu : MonoBehaviour
     {
         pauseState = false;
 
-        if (SceneManager.GetActiveScene().Equals("Level1-Penjara"))
+        Scene scene = SceneManager.GetActiveScene();
+
+        if (scene.name == "Level1-Penjara")
         {
             foreach (GameObject x in enemylist)
             {
                 x.GetComponent<EnemyMovement>().enabled = true;
             }
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         }
+        if (scene.name == "Level2-TepiSungai")
+        {
+            foreach (GameObject x in enemylist)
+            {
+                x.GetComponent<EnemyMovement>().enabled = true;
+            }
+            GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
+        }
+
         LeanTween.moveLocalY(pauseMenu, -2000f, 1f);
 
         await Task.Delay(1000);
 
         LeanTween.alphaCanvas(blur, 0f, 2f);
+        blur.blocksRaycasts = false;
     }
 
     public async void restart()
@@ -108,5 +135,10 @@ public class PauseMenu : MonoBehaviour
     public void setEnemy(GameObject[] enemy)
     {
         enemylist = enemy;
+    }
+
+    public bool getPauseState()
+    {
+        return pauseState;
     }
 }
