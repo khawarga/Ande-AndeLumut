@@ -1071,6 +1071,7 @@ MonoBehaviour:
   dialog:
     nama:
     - Penjahat
+    warnaNama: []
     foto:
     - Penjahat
     kalimat:
@@ -5428,13 +5429,17 @@ PrefabInstance:
       propertyPath: moveSpeed
       value: 20
       objectReference: {fileID: 0}
+    - target: {fileID: 8126551137413890317, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
+      propertyPath: m_Material
+      value: 
+      objectReference: {fileID: 6200000, guid: b87348a15bddf10499f4ea35d2369a16, type: 2}
     - target: {fileID: 8126551137413890318, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_Size.x
       value: 1.2526627
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890318, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_Size.y
-      value: 3.4845164
+      value: 2.060068
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890318, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_Offset.x
@@ -5442,7 +5447,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890318, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_Offset.y
-      value: -0.021055102
+      value: -0.73327935
       objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890318, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_SpriteTilingProperty.oldSize.x
@@ -7037,6 +7042,7 @@ MonoBehaviour:
   dialog:
     nama:
     - Putri
+    warnaNama: []
     foto:
     - KlentingKuning
     kalimat:
@@ -10392,6 +10398,7 @@ MonoBehaviour:
   nameBox: {fileID: 1656153315}
   potraitBox: {fileID: 168512821}
   typingSound: {fileID: 2426880}
+  triangle: {fileID: 0}
 --- !u!4 &1741208046
 Transform:
   m_ObjectHideFlags: 0
@@ -12022,6 +12029,7 @@ MonoBehaviour:
   dialog:
     nama:
     - Putri
+    warnaNama: []
     foto:
     - KlentingKuning
     kalimat:
@@ -12148,6 +12156,11 @@ MonoBehaviour:
     - Ibu
     - Putri
     - Ibu
+    warnaNama:
+    - {r: 1, g: 0, b: 0, a: 1}
+    - {r: 0, g: 1, b: 0.30540466, a: 1}
+    - {r: 0.90467775, g: 1, b: 0, a: 1}
+    - {r: 0.2926464, g: 0, b: 1, a: 1}
     foto:
     - KlentingKuning
     - Ibu

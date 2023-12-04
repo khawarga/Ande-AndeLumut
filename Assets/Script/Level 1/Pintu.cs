@@ -23,12 +23,16 @@ public class Pintu : MonoBehaviour
         switch (ID)
         {
             case "Green":
-                inventory.getGreenKey().Equals(true);
-                canUnclock = true;
+                if (inventory.getGreenKey().Equals(true))
+                {
+                    canUnclock = true;
+                }
                 break;
             case "Yellow":
-                inventory.getYellowKey().Equals(true);
-                canUnclock = true;
+                if (inventory.getYellowKey().Equals(true))
+                {
+                    canUnclock = true;
+                }
                 break;
         }
     }

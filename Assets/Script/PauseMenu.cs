@@ -71,11 +71,11 @@ public class PauseMenu : MonoBehaviour
             GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = false;
         }
 
-        LeanTween.alphaCanvas(blur, 0.7f, 2f);
+        LeanTween.alphaCanvas(blur, 0.7f, 0.5f);
 
-        await Task.Delay(2000);
+        await Task.Delay(500);
 
-        LeanTween.moveLocalY(pauseMenu, 0f, 1f);
+        LeanTween.moveLocalY(pauseMenu, 0f, 0.5f);
     }
 
     public async void resume()
@@ -101,35 +101,41 @@ public class PauseMenu : MonoBehaviour
             GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         }
 
-        LeanTween.moveLocalY(pauseMenu, -2000f, 1f);
+        LeanTween.moveLocalY(pauseMenu, -2000f, 0.5f);
 
-        await Task.Delay(1000);
+        await Task.Delay(500);
 
-        LeanTween.alphaCanvas(blur, 0f, 2f);
+        LeanTween.alphaCanvas(blur, 0f, 0.5f);
         blur.blocksRaycasts = false;
     }
 
     public async void restart()
     {
-        LeanTween.alphaCanvas(blur, 1f, 2f);
+        LeanTween.moveLocalY(pauseMenu, -2000f, 0.5f);
+        LeanTween.alphaCanvas(blur, 1f, 0.5f);
 
-        await Task.Delay(2000);
+        await Task.Delay(500);
 
         SceneManager.LoadScene(SceneManager.GetActiveScene().name);
 
-        LeanTween.alphaCanvas(blur, 0f, 2f);
+        LeanTween.alphaCanvas(blur, 0f, 0.5f);
+
+        blur.blocksRaycasts = false;
+        pauseState = false;
     }
 
     public async void backToMainMenu()
     {
-        LeanTween.moveLocalY(pauseMenu, -2000f, 1f);
-        LeanTween.alphaCanvas(blur, 1f, 2f);
+        LeanTween.moveLocalY(pauseMenu, -2000f, 0.5f);
+        LeanTween.alphaCanvas(blur, 1f, 0.5f);
 
         await Task.Delay(2000);
 
         SceneManager.LoadScene("Main Menu");
 
-        LeanTween.alphaCanvas(blur, 0f, 2f);
+        LeanTween.alphaCanvas(blur, 0f, 0.5f);
+        blur.blocksRaycasts = false;
+        pauseState = false;
     }
 
     public void setEnemy(GameObject[] enemy)

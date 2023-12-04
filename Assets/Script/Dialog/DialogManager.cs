@@ -13,12 +13,14 @@ public class DialogManager : MonoBehaviour
     public GameObject nameBox;
     public GameObject potraitBox;
     public AudioSource typingSound;
+    public Image triangle;
 
     private bool typing;
 
     private Queue<string> kalimat;
     private Queue<string> nama;
     private Queue<string> foto;
+    private Queue<Color> warnanama;
 
     // Start is called before the first frame update
     void Start()
@@ -26,6 +28,7 @@ public class DialogManager : MonoBehaviour
         kalimat = new Queue<string>();
         nama = new Queue<string>();
         foto = new Queue<string>();
+        warnanama = new Queue<Color>();
     }
 
     public void startDialog(Dialog dialog)
@@ -33,6 +36,7 @@ public class DialogManager : MonoBehaviour
         nama.Clear();
         kalimat.Clear();
         foto.Clear();
+        warnanama.Clear();
 
         foreach(string name in dialog.nama)
         {
@@ -46,6 +50,10 @@ public class DialogManager : MonoBehaviour
         foreach (string gambar in dialog.foto)
         {
             foto.Enqueue(gambar);
+        }
+        foreach (Color warna in dialog.warnaNama)
+        {
+            warnanama.Enqueue(warna);
         }
 
         if (dialog.nama.Length.Equals(0))
@@ -69,6 +77,7 @@ public class DialogManager : MonoBehaviour
         string name = nama.Dequeue();
         string kata = kalimat.Dequeue();
         string gambar = "";
+        Color warna = warnanama.Dequeue();
 
         if (foto.Count != 0)
         {
@@ -76,7 +85,7 @@ public class DialogManager : MonoBehaviour
         }
 
         StopAllCoroutines();
-        StartCoroutine(ketikKata(kata,name,gambar));
+        StartCoroutine(ketikKata(kata,name,gambar, warna));
     }
 
     public void nextKalimatDialogOnly()
@@ -92,9 +101,10 @@ public class DialogManager : MonoBehaviour
         StartCoroutine(ketikKata2(kata));
     }
 
-    IEnumerator ketikKata(string kata, string nama,string foto)
+    IEnumerator ketikKata(string kata, string nama,string foto, Color warnanama)
     {
         typing = true;
+        //triangle.enabled = false;
 
         charPotrait.gameObject.SetActive(false);
         if (foto != "")
@@ -119,6 +129,7 @@ public class DialogManager : MonoBehaviour
         }
         textNama.text = nama;
         textDialog.text = "";
+        textNama.color = warnanama;
 
         typingSound.enabled = true;
 
@@ -129,7 +140,7 @@ public class DialogManager : MonoBehaviour
         }
 
         typingSound.enabled = false;
-
+        //triangle.enabled = true;
         yield return new WaitForSecondsRealtime(1);
 
         typing = false;
@@ -138,6 +149,7 @@ public class DialogManager : MonoBehaviour
     IEnumerator ketikKata2(string kata)
     {
         typing = true;
+        //triangle.enabled = false;
 
         textDialog.text = "";
 
@@ -149,6 +161,7 @@ public class DialogManager : MonoBehaviour
             yield return null;
         }
         typingSound.enabled = false;
+        //triangle.enabled = true;
 
         yield return new WaitForSecondsRealtime(1);
 

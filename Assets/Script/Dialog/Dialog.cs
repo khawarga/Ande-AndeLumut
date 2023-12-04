@@ -8,6 +8,7 @@ using TMPro;
 public class Dialog
 {
     public string[] nama;
+    public Color[] warnaNama;
     public string[] foto;
 
     [TextArea(3, 10)]

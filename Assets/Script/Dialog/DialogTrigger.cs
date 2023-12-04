@@ -59,7 +59,7 @@ public class DialogTrigger : MonoBehaviour
 
             if (temp) return;
 
-            if (Input.GetKeyDown(KeyCode.Return))
+            if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
             {
                 if (dialog.nama.Length.Equals(0))
                 {
