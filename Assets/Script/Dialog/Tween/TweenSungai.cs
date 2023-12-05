@@ -18,15 +18,12 @@ public class TweenSungai : MonoBehaviour
         dialogTrigger.OnDialogFinish += aktif;
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (move == 2)
         {
+            LeanTween.moveLocalX(YuyuKangkang, -691, 1f);
             move++;
-            if(move == 2)
-            {
-                LeanTween.moveLocalX(YuyuKangkang, -691, 1f);
-            }
         }
     }
 
@@ -46,5 +43,11 @@ public class TweenSungai : MonoBehaviour
         GameObject.Find("Player").GetComponent<PlayerMovement>().enabled = true;
         GameObject.Find("Player").GetComponent<PlayerObject>().enabled = true;
         dialogTrigger.OnDialogFinish -= aktif;
+    }
+
+    public void setMove()
+    {
+        move++;
+        Debug.Log(move);
     }
 }

@@ -39,6 +39,8 @@ public class PauseMenu : MonoBehaviour
         {
             if (SceneManager.GetActiveScene().Equals("Main Menu")) return;
 
+            pauseMenu.SetActive(true);
+
             if (pauseState)
             {
                 resume();
@@ -112,10 +114,12 @@ public class PauseMenu : MonoBehaviour
 
         LeanTween.alphaCanvas(blur, 0f, 0.5f);
         blur.blocksRaycasts = false;
+        pauseMenu.SetActive(false);
     }
 
     public async void restart()
     {
+        Debug.Log("press res");
         LeanTween.moveLocalY(pauseMenu, -2000f, 0.5f);
         LeanTween.alphaCanvas(blur, 1f, 0.5f);
 
@@ -127,10 +131,12 @@ public class PauseMenu : MonoBehaviour
 
         blur.blocksRaycasts = false;
         pauseState = false;
+        pauseMenu.SetActive(false);
     }
 
     public async void backToMainMenu()
     {
+        Debug.Log("press back");
         LeanTween.moveLocalY(pauseMenu, -2000f, 0.5f);
         LeanTween.alphaCanvas(blur, 1f, 0.5f);
 
@@ -141,9 +147,10 @@ public class PauseMenu : MonoBehaviour
         LeanTween.alphaCanvas(blur, 0f, 0.5f);
         blur.blocksRaycasts = false;
         pauseState = false;
+        pauseMenu.SetActive(false);
     }
 
-    public async void SettingGame()
+    public void SettingGame()
     {
         settingMenu.SetActive(true);
     }

@@ -15,11 +15,15 @@ public class AyamInteraksi : MonoBehaviour
 
     public GameObject player;
 
+    GameObject handholding;
+
     private void Start()
     {
         PauseMenu temp = GameObject.Find("CanvasPauseMenu").GetComponent<PauseMenu>();
 
         temp.setEnemy(ayamList);
+
+        handholding = GameObject.Find("DialogCanvas").transform.Find("Handholding").gameObject;
     }
 
     private void Update()
@@ -106,11 +110,13 @@ public class AyamInteraksi : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        handholding.SetActive(true);
         masuk = true;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        handholding.SetActive(false);
         masuk = false;
     }
 }

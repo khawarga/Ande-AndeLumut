@@ -334,6 +334,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 708205265}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: tweenVN
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 6715558217611379578}
@@ -455,7 +459,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.kalimat.Array.data[7]
-      value: Apa itu yang ada di mukamu??? Kalau begitu aku tidak jadi meminta imbalanku,
+      value: Apa itu yang ada di mukamu? Kalau begitu aku tidak jadi meminta imbalanku,
         Cepat enyah lah dari hadapanku
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
@@ -896,6 +900,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog
       objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_lineSpacing
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
     - target: {fileID: 3448111168843171167, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1462,7 +1486,6 @@ GameObject:
   - component: {fileID: 1519111724515243311}
   - component: {fileID: 1519111724515243310}
   - component: {fileID: 1519111724515243309}
-  - component: {fileID: 1519111724515243312}
   - component: {fileID: 1519111724515243313}
   m_Layer: 5
   m_Name: DialogCanvas
@@ -1532,24 +1555,6 @@ Canvas:
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
---- !u!114 &1519111724515243312
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1519111724515243308}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38968c2d8cab50d42bbabdf7ec562bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeInFadeOut: {fileID: 1055983710407454726}
-  NextScene: VisualNovel7-AndeAndeLumut
-  potraitMove: {fileID: 803883760}
-  max: 8
-  x: -1485
-  toLevel2: 0
 --- !u!82 &1519111724515243313
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1706,8 +1711,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
-  m_sharedMaterial: {fileID: -4447921146816059199, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+  m_sharedMaterial: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -1731,8 +1736,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2176,6 +2181,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3058112611642090305}
   - component: {fileID: 3058112611642090310}
+  - component: {fileID: 3058112611642090312}
   m_Layer: 0
   m_Name: DialogManager
   m_TagString: Untagged
@@ -2183,6 +2189,24 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!114 &3058112611642090312
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3058112611642090311}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38968c2d8cab50d42bbabdf7ec562bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeInFadeOut: {fileID: 1055983710407454726}
+  NextScene: VisualNovel7-AndeAndeLumut
+  potraitMove: {fileID: 803883760}
+  max: 8
+  x: -1485
+  toLevel2: 0
 --- !u!225 &6715558217611379578
 CanvasGroup:
   m_ObjectHideFlags: 0

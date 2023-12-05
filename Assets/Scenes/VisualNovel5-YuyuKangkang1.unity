@@ -192,6 +192,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 146304210}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
+      propertyPath: tweenVN
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialogBox
       value: 
       objectReference: {fileID: 7917526739306893185}
@@ -1066,6 +1070,29 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1116883897 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 7454937488367405647, guid: b63ae9991d28fe14fa768b60737a869a, type: 3}
+  m_PrefabInstance: {fileID: 1123401202}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1116883900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1116883897}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 38968c2d8cab50d42bbabdf7ec562bc8, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  FadeInFadeOut: {fileID: 7659615451603401674}
+  NextScene: Level2-TepiSungai
+  potraitMove: {fileID: 1447666349}
+  max: 3
+  x: -651
+  toLevel2: 1
 --- !u!1001 &1123401202
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1431,6 +1458,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog
       objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontSize
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_lineSpacing
+      value: 5
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontSizeBase
+      value: 40
+      objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
     - target: {fileID: 3448111168843171167, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -2039,8 +2086,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
-  m_sharedMaterial: {fileID: -4447921146816059199, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+  m_sharedMaterial: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
@@ -2064,8 +2111,8 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
-  m_fontSize: 27
-  m_fontSizeBase: 27
+  m_fontSize: 40
+  m_fontSizeBase: 40
   m_fontWeight: 400
   m_enableAutoSizing: 0
   m_fontSizeMin: 18
@@ -2506,7 +2553,6 @@ GameObject:
   - component: {fileID: 7659615450669712366}
   - component: {fileID: 7659615450669712367}
   - component: {fileID: 7659615450669711376}
-  - component: {fileID: 7659615450669712364}
   - component: {fileID: 7659615450669712368}
   m_Layer: 5
   m_Name: Canvas
@@ -2515,24 +2561,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &7659615450669712364
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 7659615450669711377}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 38968c2d8cab50d42bbabdf7ec562bc8, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  FadeInFadeOut: {fileID: 7659615451603401674}
-  NextScene: Level2-TepiSungai
-  potraitMove: {fileID: 1447666349}
-  max: 3
-  x: -651
-  toLevel2: 1
 --- !u!224 &7659615450669712365
 RectTransform:
   m_ObjectHideFlags: 0

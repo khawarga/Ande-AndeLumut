@@ -9,13 +9,21 @@ public class YuyuKangkangInteraksi : MonoBehaviour
 
     public CanvasGroup FadeInFadeOut;
 
+    GameObject handholding;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        handholding = GameObject.Find("DialogCanvas").transform.Find("Handholding").gameObject;
+
+        handholding.SetActive(true);
+
         player = collision.gameObject;
     }
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        handholding.SetActive(false);
+
         player = null;
     }
 

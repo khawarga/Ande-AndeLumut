@@ -18,8 +18,14 @@ public class Jendela : MonoBehaviour
 
     private GameObject player;
 
+    GameObject handholding;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        handholding = GameObject.Find("Canvas").transform.Find("Handholding").gameObject;
+
+        handholding.SetActive(true);
+
         if (collision.tag.Equals("Player"))
         {
             checkItem(collision.gameObject);
@@ -29,6 +35,7 @@ public class Jendela : MonoBehaviour
 
     private void OnTriggerExit2D(Collider2D collision)
     {
+        handholding.SetActive(false);
         if (collision.tag.Equals("Player"))
         {
             player = null;
@@ -53,6 +60,7 @@ public class Jendela : MonoBehaviour
             {
                 if (open)
                 {
+                    handholding.SetActive(false);
                     GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerJendelaBener").gameObject.SetActive(true);
                     player.GetComponent<PlayerMovement>().enabled = false;
                     benar.OnDialogFinish += jendela;

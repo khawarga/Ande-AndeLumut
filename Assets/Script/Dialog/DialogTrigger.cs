@@ -17,6 +17,10 @@ public class DialogTrigger : MonoBehaviour
 
     public event EventHandler OnDialogFinish;
 
+    public bool tweenSungai;
+
+    public bool tweenVN;
+
     private void Start()
     {
         //dialogBox = UI.GetComponentInChildren<CanvasGroup>();
@@ -61,6 +65,15 @@ public class DialogTrigger : MonoBehaviour
 
             if (Input.GetKeyDown(KeyCode.Return) || Input.GetKeyDown(KeyCode.Space))
             {
+                if (tweenSungai)
+                {
+                    GameObject.Find("DialogManager").GetComponent<TweenSungai>().setMove();
+                }
+                if(tweenVN)
+                {
+                    GameObject.Find("DialogManager").GetComponent<TweenVN>().setMove();
+                }
+
                 if (dialog.nama.Length.Equals(0))
                 {
                     FindObjectOfType<DialogManager>().nextKalimatDialogOnly();

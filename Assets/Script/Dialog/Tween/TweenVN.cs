@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Scripting;
 
 public class TweenVN : MonoBehaviour
 {
@@ -34,16 +35,12 @@ public class TweenVN : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Return))
+        if (potraitMove == null) return;
+
+        if (move == max)
         {
-            if (potraitMove == null) return;
-
+            LeanTween.moveLocalX(potraitMove, x, 1f);
             move++;
-
-            if (move == max)
-            {
-                LeanTween.moveLocalX(potraitMove, x, 1f);
-            }
         }
     }
 
@@ -65,5 +62,10 @@ public class TweenVN : MonoBehaviour
         }
 
         SceneManager.LoadScene(NextScene);
+    }
+
+    public void setMove()
+    {
+        move++;
     }
 }

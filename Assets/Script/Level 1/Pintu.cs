@@ -7,6 +7,7 @@ public class Pintu : MonoBehaviour
     [SerializeField] private GameObject pintu;
     [SerializeField] private string ID;
     private bool canUnclock = false;
+    GameObject handholding;
 
     private void Update()
     {
@@ -19,6 +20,10 @@ public class Pintu : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D collision)
     {
         PlayerObject inventory = collision.GetComponent<PlayerObject>();
+
+        handholding = GameObject.Find("Canvas").transform.Find("Handholding").gameObject;
+
+        handholding.SetActive(true);
 
         switch (ID)
         {
@@ -35,5 +40,10 @@ public class Pintu : MonoBehaviour
                 }
                 break;
         }
+    }
+
+    private void OnTriggerExit2D(Collider2D collision)
+    {
+        handholding.SetActive(false);
     }
 }
