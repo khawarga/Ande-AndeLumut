@@ -104,7 +104,7 @@ public class DialogManager : MonoBehaviour
     IEnumerator ketikKata(string kata, string nama,string foto, Color warnanama)
     {
         typing = true;
-        //triangle.enabled = false;
+        triangle.enabled = false;
 
         charPotrait.gameObject.SetActive(false);
         if (foto != "")
@@ -140,7 +140,7 @@ public class DialogManager : MonoBehaviour
         }
 
         typingSound.enabled = false;
-        //triangle.enabled = true;
+        triangle.enabled = true;
         yield return new WaitForSecondsRealtime(1);
 
         typing = false;
@@ -149,7 +149,7 @@ public class DialogManager : MonoBehaviour
     IEnumerator ketikKata2(string kata)
     {
         typing = true;
-        //triangle.enabled = false;
+        triangle.enabled = false;
 
         textDialog.text = "";
 
@@ -161,7 +161,7 @@ public class DialogManager : MonoBehaviour
             yield return null;
         }
         typingSound.enabled = false;
-        //triangle.enabled = true;
+        triangle.enabled = true;
 
         yield return new WaitForSecondsRealtime(1);
 
