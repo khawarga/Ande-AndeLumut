@@ -30,6 +30,10 @@ public class BGM : MonoBehaviour
         {
             source.volume = setVolume.value;
         }
+        else if (setVolume == null)
+        {
+           setVolume = FindObjectOfType<Slider>();
+        }
     }
 
     public void setBGM(string newBGM)

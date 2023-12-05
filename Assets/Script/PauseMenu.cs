@@ -15,6 +15,9 @@ public class PauseMenu : MonoBehaviour
 
     [SerializeField]
     private GameObject pauseMenu;
+    
+    [SerializeField]
+    private GameObject settingMenu;
 
     private GameObject[] enemylist;
 
@@ -26,6 +29,8 @@ public class PauseMenu : MonoBehaviour
         if (instance == null) instance = this;
 
         DontDestroyOnLoad(this.gameObject);
+
+        settingMenu.SetActive(false);
     }
 
     private void FixedUpdate()
@@ -136,6 +141,11 @@ public class PauseMenu : MonoBehaviour
         LeanTween.alphaCanvas(blur, 0f, 0.5f);
         blur.blocksRaycasts = false;
         pauseState = false;
+    }
+
+    public async void SettingGame()
+    {
+        settingMenu.SetActive(true);
     }
 
     public void setEnemy(GameObject[] enemy)

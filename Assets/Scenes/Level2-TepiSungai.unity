@@ -170,6 +170,8 @@ MonoBehaviour:
   dialog:
     nama:
     - Klenting Kuning
+    warnaNama:
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
     foto:
     - KlentingKuning
     kalimat:
@@ -2567,6 +2569,10 @@ MonoBehaviour:
     - Yuyu Kangkang
     - Klenting Kuning
     - Yuyu Kangkang
+    warnaNama:
+    - {r: 0.6117647, g: 0, b: 0, a: 1}
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
+    - {r: 0.6117647, g: 0, b: 0, a: 1}
     foto:
     - YuyuKangkang
     - KlentingKuning
@@ -2704,6 +2710,11 @@ MonoBehaviour:
     - Klenting Kuning
     - 
     - Klenting Kuning
+    warnaNama:
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
     foto:
     - 
     - KlentingKuning
@@ -3254,6 +3265,10 @@ MonoBehaviour:
     - Yuyu Kangkang
     - Klenting Kuning
     - Yuyu Kangkang
+    warnaNama:
+    - {r: 0.6117647, g: 0, b: 0, a: 1}
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
+    - {r: 0.6117647, g: 0, b: 0, a: 1}
     foto:
     - YuyuKangkang
     - KlentingKuning
@@ -3486,6 +3501,9 @@ MonoBehaviour:
     nama:
     - 
     - Klenting Kuning
+    warnaNama:
+    - {r: 0, g: 0, b: 0, a: 0}
+    - {r: 0.9490196, g: 1, b: 0, a: 1}
     foto:
     - 
     - KlentingKuning
@@ -3966,6 +3984,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   dialog:
     nama: []
+    warnaNama: []
     foto: []
     kalimat:
     - Akhirnya Klenting Kuning pun tiba di tepi sungai.
@@ -4987,6 +5006,7 @@ MonoBehaviour:
   nameBox: {fileID: 1252846090}
   potraitBox: {fileID: 1989106917}
   typingSound: {fileID: 2721924667129872380}
+  triangle: {fileID: 0}
 --- !u!1 &7454937489154422043
 GameObject:
   m_ObjectHideFlags: 0

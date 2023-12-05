@@ -163,6 +163,11 @@ MonoBehaviour:
     - Narator
     - Narator
     - Narator
+    warnaNama:
+    - {r: 1, g: 1, b: 1, a: 1}
+    - {r: 1, g: 1, b: 1, a: 1}
+    - {r: 1, g: 1, b: 1, a: 1}
+    - {r: 1, g: 1, b: 1, a: 1}
     foto:
     - Border Avatar2
     - Border Avatar2
@@ -605,6 +610,7 @@ MonoBehaviour:
   nameBox: {fileID: 8131185523442137756}
   potraitBox: {fileID: 1758674845}
   typingSound: {fileID: 886943298}
+  triangle: {fileID: 0}
 --- !u!4 &1152021125
 Transform:
   m_ObjectHideFlags: 0
@@ -895,6 +901,14 @@ PrefabInstance:
       propertyPath: m_Name
       value: Dialog
       objectReference: {fileID: 0}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_fontAsset
+      value: 
+      objectReference: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+    - target: {fileID: 3448111168843171166, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
+      propertyPath: m_sharedMaterial
+      value: 
+      objectReference: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
     - target: {fileID: 3448111168843171167, guid: 4f44dff1cd49e1d47a1437ae29347a67, type: 3}
       propertyPath: m_Pivot.x
       value: 0.5
@@ -1407,8 +1421,8 @@ MonoBehaviour:
       m_Calls: []
   m_text: 
   m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
-  m_sharedMaterial: {fileID: -4447921146816059199, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
+  m_fontAsset: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
+  m_sharedMaterial: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []

@@ -7,7 +7,7 @@ using System.Threading.Tasks;
 
 public class MainMenu : MonoBehaviour
 {
-    public TMPro.TMP_Dropdown resolutionDropdown;
+    //public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
     [SerializeField]
@@ -20,7 +20,7 @@ public class MainMenu : MonoBehaviour
     {
         LeanTween.alphaCanvas(Blur, 0f, 2.2f).setOnComplete(enableMainMenu);
 
-        resolutions = Screen.resolutions;
+        /*resolutions = Screen.resolutions;
 
         resolutionDropdown.ClearOptions();
 
@@ -83,7 +83,7 @@ public class MainMenu : MonoBehaviour
         Application.Quit();
     }
 
-    public void SetResolution(int resolutionIndex)
+    /*public void SetResolution(int resolutionIndex)
     {
         Resolution resolution = resolutions[resolutionIndex];
         Screen.SetResolution(resolution.width, resolution.height, Screen.fullScreen);
@@ -111,5 +111,5 @@ public class MainMenu : MonoBehaviour
     public void SetFullScreen(bool isFullscreen)
     {
         Screen.fullScreen = isFullscreen;
-    }
+    }*/
 }
