@@ -1081,6 +1081,8 @@ MonoBehaviour:
   UI: {fileID: 2721924667743252535}
   dialogBox: {fileID: 7917526738879171309}
   potrait: {fileID: 0}
+  tweenSungai: 0
+  tweenVN: 0
 --- !u!1 &132644226
 GameObject:
   m_ObjectHideFlags: 0
@@ -5468,6 +5470,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: -8079115619295028983, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
+      propertyPath: Loop
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -8079115619295028983, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
+      propertyPath: m_PlayOnAwake
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 8126551137413890314, guid: eac37fbb1e5ffda479fa09735095111f, type: 3}
       propertyPath: m_RootOrder
       value: 1
@@ -7178,6 +7188,8 @@ MonoBehaviour:
   UI: {fileID: 2721924667743252535}
   dialogBox: {fileID: 7917526738879171309}
   potrait: {fileID: 0}
+  tweenSungai: 0
+  tweenVN: 0
 --- !u!1 &1214049416
 GameObject:
   m_ObjectHideFlags: 0
@@ -12290,6 +12302,8 @@ MonoBehaviour:
   UI: {fileID: 2721924667743252535}
   dialogBox: {fileID: 7917526738879171309}
   potrait: {fileID: 0}
+  tweenSungai: 0
+  tweenVN: 0
 --- !u!1 &2033745966
 GameObject:
   m_ObjectHideFlags: 0
@@ -12428,6 +12442,8 @@ MonoBehaviour:
   UI: {fileID: 2721924667743252535}
   dialogBox: {fileID: 7917526738879171309}
   potrait: {fileID: 0}
+  tweenSungai: 0
+  tweenVN: 0
 --- !u!4 &2039795520
 Transform:
   m_ObjectHideFlags: 0

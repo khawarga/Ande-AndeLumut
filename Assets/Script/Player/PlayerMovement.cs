@@ -8,11 +8,13 @@ public class PlayerMovement : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 moveDirection;
     private Animator animator;
+    private AudioSource footsteps;
 
     private void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
+        footsteps = GetComponent<AudioSource>();
     }
 
     void Update()
@@ -22,14 +24,14 @@ public class PlayerMovement : MonoBehaviour
 
         moveDirection = new Vector2(moveX, moveY);
 
-        if (moveDirection.x > 0)
-        {
-            transform.rotation = Quaternion.Euler(0, 0, 0);
-        }
-        else if (moveDirection.x < 0)
-        {
-            transform.rotation = Quaternion.Euler(0, 180, 0);
-        }
+            if (moveDirection.x > 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 0, 0);
+            }
+            else if (moveDirection.x < 0)
+            {
+                transform.rotation = Quaternion.Euler(0, 180, 0);
+            }
         animator.SetFloat("Horizontal", moveDirection.x);
         animator.SetFloat("Vertical", moveDirection.y);
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
@@ -39,6 +41,17 @@ public class PlayerMovement : MonoBehaviour
     private void FixedUpdate()
     {
         rb.velocity = new Vector2(moveDirection.x * moveSpeed, moveDirection.y * moveSpeed);
+        if (rb.velocity.magnitude != 0)
+        {
+            if (!footsteps.isPlaying)
+            {
+                footsteps.Play();
+            }
+        }
+        else
+        {
+            footsteps.Stop();
+        }
     }
 
     public void pindah(Transform startingPoint)
