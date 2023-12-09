@@ -15,6 +15,7 @@ public class PlayerMovement : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         footsteps = GetComponent<AudioSource>();
+        footsteps.enabled = true;
     }
 
     void Update()
