@@ -84,11 +84,6 @@ public class PlayerObject : MonoBehaviour
             {
                 temp = 0;
                 objective.text = "Kaburlah melalui jendela\n\n";
-                foreach (bool x in all)
-                {
-                    objective.text += (x == true) ? all2[temp] + " 1 / 1\n" : all2[temp] + " 0 / 1\n";
-                    temp++;
-                }
             }
         }
     }
