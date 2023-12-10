@@ -23,7 +23,6 @@ public class YuyuKangkangInteraksi : MonoBehaviour
     private void OnTriggerExit2D(Collider2D collision)
     {
         handholding.SetActive(false);
-
         player = null;
     }
 
@@ -32,7 +31,6 @@ public class YuyuKangkangInteraksi : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.E))
         {
             if (player == null) return;
-
             if (player.GetComponent<PlayerObject>().getKotoranAyam().Equals(true))
             {
                 GameObject temp = GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogYuyuKangkangBener").gameObject;

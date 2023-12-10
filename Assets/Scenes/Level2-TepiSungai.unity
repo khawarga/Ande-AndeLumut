@@ -884,7 +884,12 @@ MonoBehaviour:
   jantan: 0
   ayamList:
   - {fileID: 3431365861390789138}
+  - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
   - {fileID: 217114038}
+  - {fileID: 1139045489}
+  - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!61 &217114041
 BoxCollider2D:
@@ -1170,7 +1175,12 @@ MonoBehaviour:
   jantan: 0
   ayamList:
   - {fileID: 3431365861390789138}
+  - {fileID: 5166569704877671622}
   - {fileID: 242392748}
+  - {fileID: 217114038}
+  - {fileID: 1139045489}
+  - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!61 &242392751
 BoxCollider2D:
@@ -2188,6 +2198,11 @@ MonoBehaviour:
   ayamList:
   - {fileID: 3431365861390789138}
   - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
+  - {fileID: 217114038}
+  - {fileID: 1139045489}
+  - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!1001 &750212178
 PrefabInstance:
@@ -2609,6 +2624,11 @@ MonoBehaviour:
   ayamList:
   - {fileID: 3431365861390789138}
   - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
+  - {fileID: 217114038}
+  - {fileID: 1139045489}
+  - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!1 &839450259
 GameObject:
@@ -3311,7 +3331,12 @@ MonoBehaviour:
   jantan: 0
   ayamList:
   - {fileID: 3431365861390789138}
+  - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
+  - {fileID: 217114038}
   - {fileID: 1139045489}
+  - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!61 &1139045492
 BoxCollider2D:
@@ -4263,7 +4288,12 @@ MonoBehaviour:
   jantan: 0
   ayamList:
   - {fileID: 3431365861390789138}
+  - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
+  - {fileID: 217114038}
+  - {fileID: 1139045489}
   - {fileID: 1409125540}
+  - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!61 &1409125543
 BoxCollider2D:
@@ -4476,6 +4506,11 @@ MonoBehaviour:
   jantan: 0
   ayamList:
   - {fileID: 3431365861390789138}
+  - {fileID: 5166569704877671622}
+  - {fileID: 242392748}
+  - {fileID: 217114038}
+  - {fileID: 1139045489}
+  - {fileID: 1409125540}
   - {fileID: 1458728947}
   player: {fileID: 750212179}
 --- !u!61 &1458728950
@@ -5223,6 +5258,7 @@ MonoBehaviour:
   kotoranAyam: 0
   objective: {fileID: 1478601947}
   UI: {fileID: 1145330339}
+  pickUpSound: {fileID: 0}
 --- !u!1 &1837838805
 GameObject:
   m_ObjectHideFlags: 0

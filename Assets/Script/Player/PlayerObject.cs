@@ -13,6 +13,13 @@ public class PlayerObject : MonoBehaviour
     public bool kotoranAyam = false;
     public Text objective;
     public GameObject UI;
+    private AudioSource pickUp;
+    public AudioClip pickUpSound;
+
+    private void Start()
+    {
+        pickUp = GetComponent<AudioSource>();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
@@ -22,21 +29,25 @@ public class PlayerObject : MonoBehaviour
         {
             greenKey = true;
             collision.gameObject.SetActive(false);
+            pickUp.PlayOneShot(pickUpSound);
         }
         else if (collision.gameObject.tag.Equals("YellowKey"))
         {
             yellowKey = true;
             collision.gameObject.SetActive(false);
+            pickUp.PlayOneShot(pickUpSound);
         }
         else if (collision.gameObject.tag.Equals("Rope"))
         {
             rope = true;
             collision.gameObject.SetActive(false);
+            pickUp.PlayOneShot(pickUpSound);
         }
         else if (collision.gameObject.tag.Equals("PenPaper"))
         {
             penPaper = true;
             collision.gameObject.SetActive(false);
+            pickUp.PlayOneShot(pickUpSound);
         }
         updateUI();
     }
@@ -71,6 +82,7 @@ public class PlayerObject : MonoBehaviour
 
             if(bener == 4)
             {
+                temp = 0;
                 objective.text = "Kaburlah melalui jendela\n\n";
                 foreach (bool x in all)
                 {

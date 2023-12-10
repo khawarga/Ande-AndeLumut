@@ -10,12 +10,11 @@ public class PlayerMovement : MonoBehaviour
     private Animator animator;
     private AudioSource footsteps;
 
-    private void Start()
+    private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         footsteps = GetComponent<AudioSource>();
-        footsteps.enabled = true;
     }
 
     void Update()
@@ -37,6 +36,16 @@ public class PlayerMovement : MonoBehaviour
         animator.SetFloat("Vertical", moveDirection.y);
         animator.SetFloat("Speed", moveDirection.sqrMagnitude);
 
+    }
+
+    private void OnEnable()
+    {
+        footsteps.enabled = true;
+    }
+
+    private void OnDisable()
+    {
+        footsteps.enabled = false;
     }
 
     private void FixedUpdate()
