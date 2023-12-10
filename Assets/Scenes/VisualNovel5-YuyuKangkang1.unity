@@ -568,15 +568,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[7].b
-      value: 0.28052685
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[7].g
-      value: 0.28052685
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[7].r
-      value: 0.754717
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[8].a
@@ -600,15 +600,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[9].b
-      value: 0.25948733
+      value: 0.21568629
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[9].g
-      value: 0.6981132
+      value: 0.39607847
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[9].r
-      value: 0.33522645
+      value: 0.24705884
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[10].a
@@ -648,15 +648,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[12].b
-      value: 0.28235295
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[12].g
-      value: 0.28235295
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[12].r
-      value: 0.75294125
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[13].a
@@ -664,15 +664,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[13].b
-      value: 0.25882354
+      value: 0.21568629
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[13].g
-      value: 0.69803923
+      value: 0.39607847
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[13].r
-      value: 0.33333334
+      value: 0.24705884
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[14].a
@@ -680,15 +680,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[14].b
-      value: 0.28235295
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[14].g
-      value: 0.28235295
+      value: 0.054901965
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[14].r
-      value: 0.75294125
+      value: 0.36862746
       objectReference: {fileID: 0}
     - target: {fileID: 1228485552215118388, guid: e762bd5d400ea774aa2e0404f6a63028, type: 3}
       propertyPath: dialog.warnaNama.Array.data[15].a
@@ -1392,11 +1392,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 868.7998
+      value: 864.5
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -93
+      value: -94.9
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x

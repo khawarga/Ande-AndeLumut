@@ -4970,11 +4970,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 823.6
+      value: 864.5
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84.6
+      value: -94.9
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -12330,9 +12330,9 @@ MonoBehaviour:
     - Ibu
     warnaNama:
     - {r: 0.9473233, g: 1, b: 0, a: 1}
-    - {r: 1, g: 0.9297532, b: 0.4188679, a: 1}
+    - {r: 0.98039216, g: 0.9411765, b: 0.6627451, a: 1}
     - {r: 0.90467775, g: 1, b: 0, a: 1}
-    - {r: 1, g: 0.9294118, b: 0.41960788, a: 1}
+    - {r: 0.98039216, g: 0.9411765, b: 0.6627451, a: 1}
     foto:
     - KlentingKuning
     - Ibu

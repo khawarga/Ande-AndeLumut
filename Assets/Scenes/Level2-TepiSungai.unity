@@ -427,11 +427,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.x
-      value: 823.6
+      value: 864.5
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_AnchoredPosition.y
-      value: -84.6
+      value: -94.9
       objectReference: {fileID: 0}
     - target: {fileID: 6955254723244537647, guid: 47c40a5d5e9a7e5459e98ba916a50f35, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
@@ -5906,7 +5906,7 @@ MonoBehaviour:
   m_text: 
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
-  m_sharedMaterial: {fileID: -4447921146816059199, guid: 195199d524117714fb85fe17efd65dd8, type: 2}
+  m_sharedMaterial: {fileID: -3288176855814062230, guid: c14d82193aeae7a418e105302be75fcf, type: 2}
   m_fontSharedMaterials: []
   m_fontMaterial: {fileID: 0}
   m_fontMaterials: []
