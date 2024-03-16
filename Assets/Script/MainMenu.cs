@@ -15,6 +15,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField]
     private CanvasGroup Blur;
 
+    [SerializeField]
+    private Image feedbackCantSave;
+
     public AudioClip[] demung;
 
     private AudioSource audioS;
@@ -64,7 +67,24 @@ public class MainMenu : MonoBehaviour
     {
         audioS.PlayOneShot(demung[1]);
         Debug.Log("Click");
-        if (PlayerPrefs.GetString("scene") == "") return; 
+        if (PlayerPrefs.GetString("scene") == "")
+        {
+            LeanTween.alphaCanvas(Blur, 1f, 2.2f);
+
+            await Task.Delay(2300);
+
+            LeanTween.moveLocalY(feedbackCantSave.gameObject, 0, 1f).setEase(LeanTweenType.easeSpring);
+            await Task.Delay(2000);
+
+            LeanTween.moveLocalY(feedbackCantSave.gameObject, -980, 1f).setEase(LeanTweenType.easeSpring);
+            await Task.Delay(1100);
+            LeanTween.alphaCanvas(Blur, 0f, 2.2f);
+            return;
+        }
+        
+        
+        LeanTween.alphaCanvas(Blur, 1f, 2.2f);
+        await Task.Delay(2300);
         SceneManager.LoadScene(PlayerPrefs.GetString("scene"));
     }
 

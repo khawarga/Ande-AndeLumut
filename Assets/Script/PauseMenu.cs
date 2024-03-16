@@ -29,7 +29,14 @@ public class PauseMenu : MonoBehaviour
     private void Awake()
     {
         // initialize singleton
-        if (instance == null) instance = this;
+        if (instance == null)
+        {
+            instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(this.gameObject);
 

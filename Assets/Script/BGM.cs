@@ -14,7 +14,14 @@ public class BGM : MonoBehaviour
     private void Awake()
     {
         // initialize singleton
-        if (Instance == null) Instance = this;
+        if (Instance == null)
+        {
+            Instance = this;
+        }
+        else
+        {
+            Destroy(gameObject);
+        }
 
         DontDestroyOnLoad(this.gameObject);
     }
