@@ -21,7 +21,7 @@ public class PauseMenu : MonoBehaviour
 
     private GameObject[] enemylist;
 
-    private bool pauseState;
+    private bool pauseState = false;
 
     private void Awake()
     {
@@ -33,10 +33,11 @@ public class PauseMenu : MonoBehaviour
         settingMenu.SetActive(false);
     }
 
-    private void FixedUpdate()
+    private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Escape))
         {
+            Debug.Log("Kepencet");
             if (SceneManager.GetActiveScene().Equals("Main Menu")) return;
 
             pauseMenu.SetActive(true);
