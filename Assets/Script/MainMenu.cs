@@ -10,14 +10,21 @@ public class MainMenu : MonoBehaviour
     //public TMPro.TMP_Dropdown resolutionDropdown;
     Resolution[] resolutions;
 
+    [SerializeField] private GameObject pengaturan;
+
     [SerializeField]
     private CanvasGroup Blur;
+
+    public AudioClip[] demung;
+
+    private AudioSource audioS;
 
     [SerializeField]
     private GameObject tutorial;
 
     private void Start()
     {
+        audioS = GetComponent<AudioSource>();
         if(PlayerPrefs.GetString("scene") == null)
         {
             PlayerPrefs.SetString("scene", "");
@@ -55,6 +62,7 @@ public class MainMenu : MonoBehaviour
 
     public async void melanjutkan()
     {
+        audioS.PlayOneShot(demung[1]);
         Debug.Log("Click");
         if (PlayerPrefs.GetString("scene") == "") return; 
         SceneManager.LoadScene(PlayerPrefs.GetString("scene"));
@@ -68,6 +76,7 @@ public class MainMenu : MonoBehaviour
 
     public async void StartGame()
     {
+        audioS.PlayOneShot(demung[2]);
         LeanTween.alphaCanvas(Blur, 1f, 2.2f);
 
         await Task.Delay(2300);
@@ -84,9 +93,16 @@ public class MainMenu : MonoBehaviour
         SceneManager.LoadScene("VisualNovel1-Prolog");
     }
 
+    public async void goToPengaturan()
+    {
+        pengaturan.SetActive(true);
+        audioS.PlayOneShot(demung[1]);
+    }
+
 
     public async void ExitGame()
     {
+        audioS.PlayOneShot(demung[0]);
         LeanTween.alphaCanvas(Blur, 1f, 2.2f);
 
         await Task.Delay(2500);

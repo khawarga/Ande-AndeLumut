@@ -14,6 +14,9 @@ public class PauseMenu : MonoBehaviour
     private CanvasGroup blur;
 
     [SerializeField]
+    private GameObject saveMenu;
+
+    [SerializeField]
     private GameObject pauseMenu;
     
     [SerializeField]
@@ -153,7 +156,13 @@ public class PauseMenu : MonoBehaviour
 
     public async void save()
     {
+        saveMenu.SetActive(true);
+        LeanTween.scale(saveMenu, Vector3.one, 1f).setEaseInBack();
         PlayerPrefs.SetString("scene", SceneManager.GetActiveScene().name);
+        await Task.Delay(3000);
+        LeanTween.scale(saveMenu, Vector3.zero, 1f).setEaseInBack();
+        saveMenu.SetActive(false);
+
     }
 
     public void SettingGame()
