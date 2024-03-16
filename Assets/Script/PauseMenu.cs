@@ -151,6 +151,11 @@ public class PauseMenu : MonoBehaviour
         pauseMenu.SetActive(false);
     }
 
+    public async void save()
+    {
+        PlayerPrefs.SetString("scene", SceneManager.GetActiveScene().name);
+    }
+
     public void SettingGame()
     {
         settingMenu.SetActive(true);

@@ -5,7 +5,10 @@ using UnityEngine;
 public class AyamInteraksi : MonoBehaviour
 {
     [SerializeField]
-    private DialogTrigger dialogTrigger;
+    private DialogTrigger dialogTriggerJantan;
+
+    [SerializeField]
+    private DialogTrigger dialogTriggerBetina;
 
     public bool jantan;
 
@@ -15,7 +18,19 @@ public class AyamInteraksi : MonoBehaviour
 
     public GameObject player;
 
+    public Transform location;
+
+    public Transform parent;
+
+    public GameObject kotoranAyam;
+
+    public GameObject telurAyam;
+
     GameObject handholding;
+
+    public AudioSource audioSource;
+
+    public AudioClip clip;
 
     private void Start()
     {
@@ -53,8 +68,10 @@ public class AyamInteraksi : MonoBehaviour
             {
                 if (jantan.Equals(true))
                 {
-                    Debug.Log("dapat tai");
-                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(true);
+
+                    audioSource.PlayOneShot(clip);
+                    //Debug.Log("dapat tai");
+                    /*GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(true);
 
                     foreach (GameObject x in ayamList)
                     {
@@ -67,13 +84,21 @@ public class AyamInteraksi : MonoBehaviour
                     dialogTrigger.dialogTrigger();
                     dialogTrigger.OnDialogFinish += disableDialogtrigger;
 
-                    player.GetComponent<PlayerObject>().setKotoranAyam(true);
+                    player.GetComponent<PlayerObject>().setKotoranAyam(true);*/
+
+                    GameObject drop = Instantiate(kotoranAyam, location);
+                    drop.transform.SetParent(parent);
+
+                    drop.GetComponent<Drop>().kotoranAyam = true;
+                    drop.GetComponent<Drop>().player = player.GetComponent<PlayerObject>();
+                    drop.GetComponent<Drop>().ayam = gameObject.GetComponent<AyamInteraksi>();
                 }
                 else
                 {
-                    Debug.Log("zonk");
+                    audioSource.PlayOneShot(clip);
+                    //Debug.Log("zonk");
 
-                    GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(true);
+                    /*GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(true);
 
                     foreach (GameObject x in ayamList)
                     {
@@ -84,10 +109,63 @@ public class AyamInteraksi : MonoBehaviour
                     player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
 
                     dialogTrigger.dialogTrigger();
-                    dialogTrigger.OnDialogFinish += disableDialogtrigger;
+                    dialogTrigger.OnDialogFinish += disableDialogtrigger;*/
+
+                    int rng = Random.Range(0, 2);
+                    GameObject drop;
+                    Debug.Log("RNG : " + rng);
+                    if (rng == 0)
+                    {
+                        drop = Instantiate(telurAyam, location);
+                        drop.transform.SetParent(parent);
+                        drop.GetComponent<Drop>().kotoranAyam = false;
+                    }
+                    else
+                    {
+                        drop = Instantiate(kotoranAyam, location);
+                        drop.transform.SetParent(parent);
+                        drop.GetComponent<Drop>().kotoranAyam = true;
+                    }
+
+                    drop.GetComponent<Drop>().player = player.GetComponent<PlayerObject>();
+                    drop.GetComponent<Drop>().ayam = gameObject.GetComponent<AyamInteraksi>();
                 }
             }
         }
+    }
+
+    public void getKotoranAyam()
+    {
+        GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamJantan").gameObject.SetActive(true);
+
+        foreach (GameObject x in ayamList)
+        {
+            x.GetComponent<EnemyMovement>().enabled = false;
+        }
+
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+
+        dialogTriggerJantan.dialogTrigger();
+        dialogTriggerJantan.OnDialogFinish += disableDialogtrigger;
+
+        player.GetComponent<PlayerObject>().setKotoranAyam(true);
+    }
+
+    public void getTelurAyam()
+    {
+        GameObject.Find("DialogManager").GetComponent<Transform>().Find("DialogTriggerAyamBetina").gameObject.SetActive(true);
+
+        foreach (GameObject x in ayamList)
+        {
+            x.GetComponent<EnemyMovement>().enabled = false;
+        }
+
+        player.GetComponent<PlayerMovement>().enabled = false;
+        player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+
+        dialogTriggerBetina.dialogTrigger();
+        dialogTriggerBetina.OnDialogFinish += disableDialogtrigger;
     }
 
     private void disableDialogtrigger(object sender, System.EventArgs e)
@@ -100,7 +178,8 @@ public class AyamInteraksi : MonoBehaviour
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.None;
         player.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezeRotation;
 
-        dialogTrigger.OnDialogFinish -= disableDialogtrigger;
+        dialogTriggerBetina.OnDialogFinish -= disableDialogtrigger;
+        dialogTriggerJantan.OnDialogFinish -= disableDialogtrigger;
 
         foreach (GameObject x in ayamList)
         {

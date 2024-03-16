@@ -18,6 +18,10 @@ public class MainMenu : MonoBehaviour
 
     private void Start()
     {
+        if(PlayerPrefs.GetString("scene") == null)
+        {
+            PlayerPrefs.SetString("scene", "");
+        }
         LeanTween.alphaCanvas(Blur, 0f, 2.2f).setOnComplete(enableMainMenu);
 
         /*resolutions = Screen.resolutions;
@@ -47,6 +51,13 @@ public class MainMenu : MonoBehaviour
         resolutionDropdown.value = currentResolutionIndex;
         resolutionDropdown.RefreshShownValue();
         */
+    }
+
+    public async void melanjutkan()
+    {
+        Debug.Log("Click");
+        if (PlayerPrefs.GetString("scene") == "") return; 
+        SceneManager.LoadScene(PlayerPrefs.GetString("scene"));
     }
 
     private void enableMainMenu()
