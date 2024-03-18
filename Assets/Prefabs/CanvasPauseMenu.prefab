@@ -115,6 +115,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   blur: {fileID: 1802135837047334226}
+  saveMenu: {fileID: 0}
   pauseMenu: {fileID: 6505585200191555396}
   settingMenu: {fileID: 6947320258735933078}
 --- !u!1001 &8371831357031795167
@@ -354,6 +355,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7866874569497144461, guid: 0e61a55c3a9241043b8e964a08e96589, type: 3}
       propertyPath: m_BlocksRaycasts
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 8065831658220550349, guid: 0e61a55c3a9241043b8e964a08e96589, type: 3}
+      propertyPath: m_IsActive
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []

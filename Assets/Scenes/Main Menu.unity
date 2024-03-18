@@ -2619,23 +2619,23 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6947320258933548167, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6947320258933548167, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6947320259720109348, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AnchorMax.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6947320259720109348, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AnchorMax.y
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6947320259720109348, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AnchorMin.x
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 6947320260742421991, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
@@ -2755,7 +2755,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8371831356193390744, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_IsActive
-      value: 0
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 8371831356193390748, guid: 9411b6ff3c379d342b9461d8ffd2c511, type: 3}
       propertyPath: m_AdditionalShaderChannelsFlag
